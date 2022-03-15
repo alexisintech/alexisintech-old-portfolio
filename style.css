@@ -69,7 +69,7 @@ button{
     width:100%
 }
 
-/* HEADING  */
+/* ===================== HEADING ===================== */
 
 .heading{
     position:relative;
@@ -184,6 +184,8 @@ button{
     background-color:royalblue
 }
 
+/* ===================== NAV BAR ===================== */
+
 .navigation{
     display:flex;
     margin-right:10rem;
@@ -218,6 +220,8 @@ button{
 .navigation__item--active{color:rgba(253, 0, 17)}
 
 .navigation__item:hover{color:rgba(253, 0, 17)}
+
+/* ===================== ABOUT SECTION ===================== */
 
 .about{
     width:1300px;
@@ -255,7 +259,7 @@ button{
 
 @media (max-width: 1300px){.about__content{flex-direction:column;gap: 0px;margin-left: 0px}}
 
-/* Left side of About section (includes profile pic and bio) */
+/* ===================== Left side of About section (includes profile pic and bio) ===================== */
 .profile{
     position:relative;
     display:flex;
@@ -289,7 +293,7 @@ button{
     transition:all 1.1s
 }
 
-/* The bio paragraph under profile picture  */
+/* ===================== The bio paragraph under profile picture ===================== */
 .profile__blurb{
     display: flex;
     text-align: center;
@@ -312,7 +316,7 @@ button{
 
 @media (max-width: 1300px){.profile__fade-in{transform:translateX(0)}}
 
-/* Skills next to profile picture  */
+/* ===================== SKILLS (NEXT TO PROFILE PICTURE) ===================== */
 .skills{
     display:flex;
     justify-content:center
@@ -424,6 +428,8 @@ button{
     0%{opacity:0}
     100%{opacity:1}
 }
+
+/* ===================== CONTACT SECTION ===================== */
 
 .contact{
     position:relative;
@@ -580,6 +586,8 @@ button{
     border-left:2px solid #ff4d5a !important
 } */
 
+/* ===================== FOOTER ===================== */
+
 .footer{
     position:relative;
     display:flex;
@@ -596,15 +604,12 @@ button{
     gap: 3rem;
 }
 
-.socials__github,.socials__email{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:35px;
-    background-color:transparent;
+.socials a{
     cursor:pointer;
-    transition:all 0.2s
+    transition:all 0.2s;
 }
+
+.socials a:hover{transform:scale(1.2)}
 
 .socials img{height:100%}
 
