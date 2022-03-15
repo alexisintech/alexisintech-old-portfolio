@@ -1,0 +1,277 @@
+<!-- Credit to benscott.dev ||  https://github.com/bscottnz/portfolio-site   -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alexisxdawn | Full Stack Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="hero" id="hero">
+      <div class="canvas">
+        <canvas class="connecting-dots"></canvas>
+      </div>
+      <div class="heading">
+        <div class="heading__line-1">Hello, I'm <span>Alexis</span>.</div>
+        <div class="heading__line-2">I'm a full stack software engineer.</div>
+        <a href="#about" class="heading__link">
+          <div class="heading-cta">
+            View my work
+
+            <svg
+              class="heading__arrow"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <title>arrow-right</title>
+              <path
+                d="M11.293 5.707l5.293 5.293h-11.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h11.586l-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l7-7c0.092-0.092 0.166-0.202 0.217-0.324 0.101-0.245 0.101-0.521 0-0.766-0.049-0.118-0.121-0.228-0.217-0.324l-7-7c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"
+              ></path>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+    <nav class="navigation-bar">
+      <ul class="navigation">
+        <li class="navigation__item navigation__item--active" id="nav-hero"><a href="#hero">Home</a></li>
+        <li class="navigation__item" id="nav-about"><a href="#about">About</a></li>
+        <li class="navigation__item" id="nav-projects"><a href="#projects">Projects</a></li>
+        <li class="navigation__item" id="nav-contact"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="main-bg">
+      <div class="canvas">
+        <canvas class="canvas-2"></canvas>
+      </div>
+    </div>
+    <section class="about" id="about">
+      <h2 class="about__heading section-heading">About</h2>
+
+      <div class="about__content">
+        <div class="profile">
+          <div class="profile__picture">
+          </div>
+          <p class="profile__blurb">
+            I'm a full stack web developer with a passion for creating. I love bringing ideas to life and using my skills to make visions become reality. When I'm not coding, I enjoy weight lifting, self-care, and learning.
+          </p>
+        </div>
+
+        <div class="skills">
+          <!-- <div class="skills__row">
+            <div class="skills__item skills__item--node">
+              <img src="./assets/node.png" alt="" />
+            </div>
+          </div> -->
+          <div class="skills__row">
+            <div class="skills__item skills__item--html">
+              <img src="./imgs/html.png" alt="" />
+              <div class="skills__item-name">HTML</div>
+            </div>
+            <!-- <div class="skills__item skills__item--react">
+              <img src="./assets/react.png" alt="" />
+              <div class="skills__item-name">REACT</div>
+            </div> -->
+
+            <!-- <div class="skills__item skills__item--npm">
+              <img src="./assets/express.png" alt="" />
+              <div class="skills__item-name">EXPRESS.JS</div>
+            </div> -->
+          </div>
+          <div class="skills__row">
+            <div class="skills__item skills__item--js">
+              <img src="./imgs/JS.png" alt="" />
+              <div class="skills__item-name">JAVASCRIPT</div>
+            </div>
+            <div class="skills__item skills__item--css">
+              <img src="./imgs/css.png" alt="" />
+              <div class="skills__item-name">CSS</div>
+            </div>
+            <!-- <div class="skills__item skills__item--python">
+              <img src="./assets/mongo.png" alt="" />
+              <div class="skills__item-name">MONGODB</div>
+            </div> -->
+
+            <!-- <div class="skills__item skills__item--git">
+              <img src="./assets/git.png" alt="" />
+              <div class="skills__item-name">GIT</div>
+            </div> -->
+          </div>
+          <!-- <div class="skills__row">
+            <div class="skills__item skills__item--sass">
+              <img src="./assets/sass.png" alt="" />
+              <div class="skills__item-name">SASS</div>
+            </div>
+            <div class="skills__item skills__item--webpack">
+              <img src="./assets/nextjs.png" alt="" />
+              <div class="skills__item-name">NEXT.JS</div>
+            </div>
+
+            <div class="skills__item skills__item--r">
+              <img src="./assets/node.png" alt="" />
+              <div class="skills__item-name">NODE.JS</div>
+            </div>
+          </div> -->
+          <!-- <div class="skills__row">
+            <div class="skills__item skills__item--git">
+              <img src="./assets/git.png" alt="" />
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="projects__heading section-heading">Projects</h2>
+
+      <div class="project project-left">
+        <a href="https://alexisxdawn-chooseyourfighter.netlify.app/" target="_blank">
+          <div class="project__image-container fighter">
+            <div class="project__image-image">
+              <img src="./imgs/chooseYourFighter.jpg" alt="" />
+            </div>
+          </div>
+        </a>
+        <div class="project__info">
+          <h3 class="project__title">Choose Your Fighter</h3>
+          <p class="project__description">An interactive website to explore different HunterxHunter characters.</p>
+          <a href="https://alexisxdawn-chooseyourfighter.netlify.app/" target="_blank"
+            ><div class="project__live-2">Live website</div></a
+          >
+        </div>
+      </div>
+
+      <div class="project project-right">
+        <div class="project__info">
+          <h3 class="project__title">Sixela Salon</h3>
+          <p class="project__description">A faux salon's website with a sophisticated layout.</p>
+          <a href="https://alexisxdawn-sixela.netlify.app/" target="_blank"
+            ><div class="project__live-2">Live website</div></a
+          >
+        </div>
+        <a href="https://alexisxdawn-sixela.netlify.app/" target="_blank">
+          <div class="project__image-container sixela">
+            <div class="project__image-image">
+              <img src="./imgs/sixela.jpg" alt="" />
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="project project-left">
+        <a href="https://alexisxdawn-maidcafe.netlify.app/" target="_blank">
+          <div class="project__image-container maid">
+            <div class="project__image-image">
+              <img src="./imgs/maidCafe.jpg" alt="" />
+            </div>
+          </div>
+        </a>
+        <div class="project__info">
+          <h3 class="project__title">The Maid Cafe</h3>
+          <p class="project__description">A resturant layout styled with the theme of an anime maid cafe.</p>
+          <a href="https://alexisxdawn-maidcafe.netlify.app/" target="_blank"
+            ><div class="project__live-2">Live website</div></a
+          >
+      </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="contact__heading section-heading">Let's Connect</h2>
+      <p class="contact__text">Want to work together? Contact me on any platform and let's collaborate.</p>
+      
+      <section class="socials">
+        
+        <a href="https://twitter.com/alexisintech/">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="10rem" height="10rem"
+        viewBox="0 0 172 172"
+        style=" fill:#000000;">
+        <defs>
+            <linearGradient id="gradient-1" x1="0" y1="0" x2="80%" y2="80%">
+              <stop stop-color="rgb(81,162,233)" offset="0%" />
+              <stop stop-color="rgb(168,120,162)" offset="100%" />
+            </linearGradient>
+
+            <linearGradient
+              id="gradient-2"
+              x1="20%"
+              y1="20%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop stop-color="rgb(168,120,162)" offset="0%" />
+              <stop stop-color="rgb(255,77,90)" offset="100%" />
+            </linearGradient>
+        </defs>
+        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <path d="M0,172v-172h172v172z" fill="none"></path>
+            <g id="original-icon" fill="url(#gradient-1)">
+                <path d="M117.7125,18.8125c-20.57281,0 -37.3025,16.72969 -37.3025,37.3025c0,1.23625 0.30906,2.44563 0.43,3.655c-25.43719,-2.43219 -47.93156,-14.68719 -63.21,-33.4325c-0.71219,-0.90031 -1.81406,-1.38406 -2.96969,-1.30344c-1.14219,0.08062 -2.16344,0.73906 -2.72781,1.73344c-3.21156,5.52281 -5.0525,11.87875 -5.0525,18.705c0,8.26406 2.95625,15.82938 7.525,22.0375c-0.88687,-0.38969 -1.85437,-0.60469 -2.6875,-1.075c-1.06156,-0.56437 -2.33812,-0.5375 -3.37281,0.08063c-1.03469,0.61812 -1.66625,1.73344 -1.67969,2.92937v0.43c0,12.67156 6.5575,23.67688 16.2325,30.4225c-0.1075,-0.01344 -0.215,0.02688 -0.3225,0c-1.1825,-0.20156 -2.37844,0.215 -3.17125,1.11531c-0.79281,0.90031 -1.04812,2.15 -0.69875,3.29219c3.84313,11.94594 13.6525,21.07 25.8,24.4025c-9.675,5.75125 -20.89531,9.1375 -33.0025,9.1375c-2.62031,0 -5.13312,-0.13437 -7.6325,-0.43c-1.6125,-0.215 -3.15781,0.72563 -3.69531,2.2575c-0.55094,1.53188 0.05375,3.23844 1.43781,4.085c15.52031,9.95719 33.94313,15.8025 53.75,15.8025c32.10219,0 57.28406,-13.41062 74.175,-32.5725c16.89094,-19.16187 25.6925,-44.04812 25.6925,-67.295c0,-0.98094 -0.08062,-1.935 -0.1075,-2.9025c6.30219,-4.82406 11.9325,-10.48125 16.34,-17.0925c0.87344,-1.27656 0.77938,-2.98312 -0.22844,-4.16562c-0.99438,-1.1825 -2.67406,-1.54531 -4.07156,-0.88688c-1.77375,0.79281 -3.84312,0.87344 -5.6975,1.505c2.44563,-3.26531 4.54188,-6.78594 5.805,-10.75c0.43,-1.35719 -0.04031,-2.84875 -1.15562,-3.73562c-1.11531,-0.87344 -2.67406,-0.98094 -3.89688,-0.24188c-5.87219,3.48031 -12.37594,5.92594 -19.2425,7.4175c-6.665,-6.235 -15.43969,-10.4275 -25.2625,-10.4275zM117.7125,25.6925c8.77469,0 16.70281,3.74906 22.2525,9.675c0.83313,0.86 2.05594,1.22281 3.225,0.9675c4.48813,-0.88687 8.74781,-2.19031 12.9,-3.87c-2.39187,3.225 -5.34812,5.97969 -8.815,8.0625c-1.57219,0.76594 -2.31125,2.58 -1.73344,4.23281c0.56437,1.63937 2.28437,2.59344 3.99094,2.21719c3.44,-0.41656 6.50375,-1.81406 9.7825,-2.6875c-2.94281,3.18469 -6.16781,6.06031 -9.675,8.6c-0.95406,0.69875 -1.47812,1.8275 -1.3975,3.01c0.05375,1.3975 0.1075,2.78156 0.1075,4.1925c0,21.5 -8.25062,44.84094 -23.9725,62.6725c-15.72187,17.83156 -38.8075,30.315 -69.015,30.315c-13.71969,0 -26.67344,-3.03687 -38.3775,-8.385c14.5125,-1.11531 27.89625,-6.24844 38.7,-14.7275c1.12875,-0.90031 1.57219,-2.40531 1.11531,-3.77594c-0.45688,-1.37063 -1.72,-2.31125 -3.15781,-2.35156c-11.34125,-0.20156 -20.84156,-6.79937 -25.9075,-16.125c0.18813,0 0.34938,0 0.5375,0c3.39969,0 6.75906,-0.43 9.89,-1.29c1.505,-0.44344 2.53969,-1.84094 2.48594,-3.41312c-0.05375,-1.57219 -1.16906,-2.91594 -2.70094,-3.25188c-12.24156,-2.4725 -21.41937,-12.44312 -23.5425,-24.8325c3.46688,1.19594 7.01438,2.13656 10.8575,2.2575c1.57219,0.09406 2.99656,-0.88687 3.48031,-2.37844c0.48375,-1.49156 -0.1075,-3.13094 -1.43781,-3.96406c-8.17,-5.46906 -13.545,-14.78125 -13.545,-25.37c0,-3.92375 1.02125,-7.525 2.365,-10.965c17.2,18.87969 41.28,31.41688 68.4775,32.7875c1.075,0.05375 2.12313,-0.38969 2.82188,-1.20937c0.69875,-0.83313 0.9675,-1.935 0.72562,-2.98313c-0.52406,-2.23062 -0.86,-4.59562 -0.86,-6.9875c0,-16.85062 13.57188,-30.4225 30.4225,-30.4225z"></path>
+            </g>
+        </g>
+        </svg>
+        </a>
+
+        <a href="https://github.com/alexisxdawn/">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="10rem" height="10rem"
+            viewBox="0 0 26 26"
+            style=" fill:#000000;">
+            <g fill="url(#gradient-2)">
+                <path d="M 13 0.1875 C 5.925781 0.1875 0.1875 5.925781 0.1875 13 C 0.1875 20.074219 5.925781 25.8125 13 25.8125 C 20.074219 25.8125 25.8125 20.074219 25.8125 13 C 25.8125 5.925781 20.074219 0.1875 13 0.1875 Z M 13 2.1875 C 18.960938 2.1875 23.8125 7.039063 23.8125 13 C 23.8125 13.46875 23.777344 13.921875 23.71875 14.375 C 23.519531 14.324219 22.894531 14.164063 22.21875 14.15625 C 21.613281 14.148438 20.886719 14.25 20.5 14.3125 C 20.601563 13.898438 20.6875 13.457031 20.6875 13 C 20.6875 11.859375 20.257813 10.75 19.5 9.8125 C 19.78125 8.929688 20.171875 6.921875 19.40625 6.15625 C 17.53125 6.15625 16.476563 7.347656 16.28125 7.59375 C 15.421875 7.28125 14.492188 7.125 13.5 7.125 C 12.53125 7.125 11.59375 7.265625 10.75 7.5625 C 10.488281 7.246094 9.453125 6.15625 7.65625 6.15625 C 6.90625 6.90625 7.28125 8.839844 7.5625 9.75 C 6.769531 10.703125 6.3125 11.832031 6.3125 13 C 6.3125 13.429688 6.347656 13.859375 6.4375 14.25 C 6.109375 14.222656 4.777344 14.125 4.25 14.125 C 3.722656 14.125 2.855469 14.238281 2.28125 14.375 C 2.222656 13.921875 2.1875 13.46875 2.1875 13 C 2.1875 7.039063 7.039063 2.1875 13 2.1875 Z M 4.25 14.375 C 4.769531 14.375 6.371094 14.519531 6.53125 14.53125 C 6.558594 14.625 6.589844 14.71875 6.625 14.8125 C 6.097656 14.769531 4.96875 14.695313 4.25 14.78125 C 3.371094 14.886719 2.722656 15.234375 2.46875 15.375 C 2.414063 15.128906 2.351563 14.875 2.3125 14.625 C 2.863281 14.496094 3.761719 14.375 4.25 14.375 Z M 22.21875 14.40625 C 22.875 14.414063 23.519531 14.554688 23.6875 14.59375 C 23.671875 14.707031 23.644531 14.824219 23.625 14.9375 C 23.539063 14.914063 22.757813 14.675781 21.9375 14.65625 C 21.535156 14.644531 20.898438 14.710938 20.40625 14.75 C 20.429688 14.6875 20.449219 14.625 20.46875 14.5625 C 20.808594 14.515625 21.617188 14.398438 22.21875 14.40625 Z M 21.90625 14.90625 C 22.703125 14.925781 23.546875 15.175781 23.59375 15.1875 C 22.855469 18.777344 20.335938 21.699219 17 23.03125 L 17 21.3125 C 17 20.230469 16.355469 18.824219 15.4375 18.125 C 18.023438 17.753906 19.632813 16.609375 20.3125 15 C 20.777344 14.960938 21.488281 14.894531 21.90625 14.90625 Z M 5.0625 15 C 5.777344 15.003906 6.417969 15.039063 6.71875 15.0625 C 7.414063 16.636719 9.011719 17.757813 11.5625 18.125 C 11.273438 18.347656 11.003906 18.636719 10.78125 18.96875 C 10.773438 18.980469 10.757813 18.988281 10.75 19 C 10.25 19.601563 9.3125 19.5625 8.4375 19.5625 C 7.542969 19.5625 7.007813 18.847656 6.53125 18.21875 C 6.050781 17.59375 5.425781 17.539063 5.09375 17.5 C 4.761719 17.464844 4.671875 17.632813 4.84375 17.75 C 5.816406 18.433594 6.199219 19.269531 6.59375 20 C 6.949219 20.65625 7.679688 21 8.5 21 L 10.03125 21 C 10.019531 21.101563 10 21.214844 10 21.3125 L 10 23.375 C 6.316406 22.3125 3.464844 19.359375 2.53125 15.625 C 2.726563 15.515625 3.414063 15.132813 4.28125 15.03125 C 4.488281 15.007813 4.765625 15 5.0625 15 Z M 13.5 21 C 13.777344 21 14 21.222656 14 21.5 L 14 23.75 C 13.667969 23.78125 13.339844 23.8125 13 23.8125 L 13 21.5 C 13 21.222656 13.222656 21 13.5 21 Z M 11.5 21.59375 C 11.777344 21.59375 12 21.816406 12 22.09375 L 12 23.75 C 11.667969 23.71875 11.324219 23.683594 11 23.625 L 11 22.09375 C 11 21.816406 11.222656 21.59375 11.5 21.59375 Z M 15.5 21.59375 C 15.777344 21.59375 16 21.816406 16 22.09375 L 16 23.375 C 15.671875 23.46875 15.339844 23.5625 15 23.625 L 15 22.09375 C 15 21.816406 15.222656 21.59375 15.5 21.59375 Z"></path>
+            </g>
+        </svg>
+        </a>
+
+        <a href="https://alexisintech.wixsite.com/blog">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="10rem" height="10rem"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;">
+            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+            <g><path d="M80.625,138.17513l-2.6875,2.6875v12.32487h12.32487l2.6875,-2.6875z" fill="none"></path>
+                <rect x="12.31314" y="57.56818" transform="rotate(-45) scale(2.6875,2.6875)" width="3.657" height="6.486" fill="none"></rect>
+                <rect x="-13.14221" y="57.56818" transform="rotate(-45) scale(2.6875,2.6875)" width="23.456" height="6.486" fill="none"></rect>
+                <path d="M161.25,61.8125h-91.375c-4.45078,0.00486 -8.05764,3.61172 -8.0625,8.0625v91.375c0.00486,4.45078 3.61172,8.05764 8.0625,8.0625h91.375c4.45078,-0.00486 8.05764,-3.61172 8.0625,-8.0625v-91.375c-0.00486,-4.45078 -3.61172,-8.05764 -8.0625,-8.0625zM155.875,158.5625h-48.375c-1.48427,0 -2.6875,-1.20323 -2.6875,-2.6875c0,-1.48427 1.20323,-2.6875 2.6875,-2.6875h48.375c1.48427,0 2.6875,1.20323 2.6875,2.6875c0,1.48427 -1.20323,2.6875 -2.6875,2.6875zM157.77506,93.27506l-64.5,64.5c-0.50377,0.50422 -1.18731,0.7875 -1.90006,0.78744h-16.125c-0.71283,0.00019 -1.39651,-0.2829 -1.90055,-0.78695c-0.50404,-0.50404 -0.78713,-1.18773 -0.78695,-1.90055v-16.125c0.00019,-0.7127 0.28343,-1.39616 0.78744,-1.90006l64.5,-64.5c0.50385,-0.50413 1.18739,-0.78737 1.90014,-0.78737c0.71275,0 1.39629,0.28324 1.90014,0.78737l16.125,16.125c0.50406,0.50387 0.78724,1.18738 0.78721,1.9001c-0.00003,0.71271 -0.28327,1.3962 -0.78737,1.90003z" fill="url(#gradient-2)"></path>
+                <path d="M18.8125,13.4375h-2.6875c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875c0,1.48427 1.20323,2.6875 2.6875,2.6875h2.6875c1.48427,0 2.6875,-1.20323 2.6875,-2.6875c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875z" fill="#7491cc"></path>
+                <path d="M32.25,13.4375h-2.6875c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875c0,1.48427 1.20323,2.6875 2.6875,2.6875h2.6875c1.48427,0 2.6875,-1.20323 2.6875,-2.6875c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875z" fill="#7491cc"></path>
+                <path d="M129,2.6875h-118.25c-4.45078,0.00486 -8.05764,3.61172 -8.0625,8.0625v107.5c0.00486,4.45078 3.61172,8.05764 8.0625,8.0625h118.25c4.45078,-0.00486 8.05764,-3.61172 8.0625,-8.0625v-107.5c-0.00486,-4.45078 -3.61172,-8.05764 -8.0625,-8.0625zM131.6875,118.25c-0.00148,1.48365 -1.20385,2.68602 -2.6875,2.6875h-118.25c-1.48365,-0.00148 -2.68602,-1.20385 -2.6875,-2.6875v-88.6875h123.625zM131.6875,24.1875h-123.625v-13.4375c0.00148,-1.48365 1.20385,-2.68602 2.6875,-2.6875h118.25c1.48365,0.00148 2.68602,1.20385 2.6875,2.6875z" fill="url(#gradient-1)"></path>
+                <path d="M86,45.6875h32.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875c0,1.48427 1.20323,2.6875 2.6875,2.6875z" fill="(#gradient-1)"></path>
+                <path d="M86,61.8125h32.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875c0,1.48427 1.20323,2.6875 2.6875,2.6875z" fill="(#gradient-1)"></path>
+                <path d="M86,77.9375h32.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875c0,1.48427 1.20323,2.6875 2.6875,2.6875z" fill="(#gradient-1)"></path>
+                <path d="M86,94.0625h32.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875c0,1.48427 1.20323,2.6875 2.6875,2.6875z" fill="(#gradient-1)"></path>
+                <path d="M21.5,110.1875h96.75c1.48427,0 2.6875,-1.20323 2.6875,-2.6875c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875h-96.75c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875c0,1.48427 1.20323,2.6875 2.6875,2.6875z" fill="#a27ba7"></path>
+                <path d="M21.5,94.0625h48.375c0.71283,0.00019 1.39651,-0.2829 1.90055,-0.78695c0.50404,-0.50404 0.78713,-1.18773 0.78695,-1.90055v-48.375c0.00019,-0.71283 -0.2829,-1.39651 -0.78695,-1.90055c-0.50404,-0.50404 -1.18773,-0.78713 -1.90055,-0.78695h-48.375c-0.71283,-0.00019 -1.39651,0.2829 -1.90055,0.78695c-0.50404,0.50404 -0.78713,1.18773 -0.78695,1.90055v48.375c-0.00019,0.71283 0.2829,1.39651 0.78695,1.90055c0.50404,0.50404 1.18773,0.78713 1.90055,0.78695zM24.1875,45.6875h43v43h-43z" fill="#7491cc"></path>
+                <path d="M56.3404,64.85956l-18.6183,-10.75c-0.83172,-0.47912 -1.85576,-0.47857 -2.68696,0.00143c-0.83121,0.48 -1.34353,1.36667 -1.34429,2.32651v21.5c0.00095,0.95976 0.51331,1.84628 1.34445,2.32624c0.83113,0.47996 1.85506,0.48061 2.6868,0.0017l18.6183,-10.75c0.83071,-0.48092 1.34219,-1.36806 1.34219,-2.32794c0,-0.95987 -0.51149,-1.84702 -1.34219,-2.32794zM39.06585,73.28294v-12.19088l10.5558,6.09544z" fill="#7491cc"></path>
+            </g>
+            </g>
+        </svg>
+        </a>
+
+      </section>
+    </section>
+
+    <footer class="footer">
+      <a href="#hero">
+        <div class="return-home">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%"  viewBox="0 0 24 24" >
+            <title></title>
+            <path fill="#fafafa" d="M17.707 10.293l-5-5c-0.391-0.391-1.024-0.391-1.414 0l-5 5c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4.293-4.293 4.293 4.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414zM17.707 17.293l-5-5c-0.391-0.391-1.024-0.391-1.414 0l-5 5c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4.293-4.293 4.293 4.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"></path>
+            </svg>
+        </div>
+      </a>
+      
+      <p class="copyright">ALEXISXDAWN ©2022</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="heroCanvas.js"></script>
+    <script src="bgCanvas.js"></script>
+</body>
+</html>
