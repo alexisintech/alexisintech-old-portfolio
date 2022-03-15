@@ -628,7 +628,7 @@ button{
     left:0;
     right:0;
     text-align:center;
-    background-color:rgba(253, 0, 17);
+    background-color:rgb(89, 158, 226, 0.8);
     -webkit-animation-duration:1s;
     animation-duration:1s;
     -webkit-animation-fill-mode:both;
