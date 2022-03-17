@@ -91,7 +91,7 @@ button{
 .heading__line-1{animation-name:moveInLeft}
 
 .heading__line-1 span{
-    color:rgba(253, 0, 17);
+    color: rgba(252, 58, 74);
     font-weight:400
 }
 
@@ -116,9 +116,9 @@ button{
     width:27.5rem;
     height:4.8rem;
     background-color:rgba(26,26,26,0.6);
-    border:2px solid rgba(253, 0, 17);
+    border:2px solid rgba(252, 58, 74);
     border-radius:2px;
-    color:rgba(253, 0, 17);
+    color:rgba(252, 58, 74);
     font-size:2.4rem;
     font-weight:500;
     cursor:pointer;
@@ -138,7 +138,7 @@ button{
     width:27.5rem;
     height:4.8rem;
     border-radius:3px;
-    border:2px solid rgba(253, 0, 17);
+    border:2px solid rgba(252, 58, 74);
     filter:blur(0);
     transform-origin:50%;
     z-index:-1;
@@ -168,7 +168,7 @@ button{
     width:24px;
     margin-left:15px;
     transform:rotate(90deg);
-    fill:rgba(253, 0, 17);
+    fill:rgba(252, 58, 74);
     transition:all 0.3s
 }
 
@@ -217,9 +217,8 @@ button{
 
 .navigation__item:not(:last-child){margin-right:3rem}
 
-.navigation__item--active{color:rgba(253, 0, 17)}
-
-.navigation__item:hover{color:rgba(253, 0, 17)}
+.navigation__item--active{color:rgba(252, 58, 74)}
+.navigation__item:hover{color:rgba(252, 58, 74)}
 
 /* ===================== ABOUT SECTION ===================== */
 
@@ -238,7 +237,7 @@ button{
 .about__heading:before{
     position:absolute;
     content:'';
-    border-bottom:18px solid rgba(253, 0, 17, 0.4);
+    border-bottom:18px solid rgba(252, 58, 74, 0.5);
     width:16rem;
     display:block;
     margin:0 auto;
@@ -248,7 +247,7 @@ button{
     z-index:-1
 }
 
-@media (max-width: 770px){.about__heading:before{border-bottom:14px solid rgba(253, 0, 17, 0.4)}}
+@media (max-width: 770px){.about__heading:before{border-bottom:14px solid rgba(252, 58, 74, 0.5)}}
 
 .about__content{
     display:flex;
@@ -347,7 +346,7 @@ button{
     border:double 3px transparent;
     border-image-slice:1;
     border-width:3px;
-    background-image:linear-gradient(#1a1a1a, #1a1a1a),radial-gradient(circle at top left, #51a2e9, #ff4d5a);
+    background-image:linear-gradient(#1a1a1a, #1a1a1a),radial-gradient(circle at top left, #51a2e9, rgba(252, 58, 74));
     border-radius:10px;
     background-origin:border-box;
     background-clip:content-box, border-box;
@@ -453,7 +452,7 @@ button{
 }
 .contact__heading:before{
     position:absolute;content:'';
-    border-bottom:18px solid rgba(253, 0, 17, 0.4);
+    border-bottom:18px solid rgba(252, 58, 74, 0.5);
     width:37rem;
     display:block;
     margin:0 auto;
@@ -462,7 +461,7 @@ button{
     top:6.5rem;
     z-index:-1
 }
-@media (max-width: 770px){.contact__heading:before{border-bottom:14px solid rgba(253, 0, 17, 0.4)}}
+@media (max-width: 770px){.contact__heading:before{border-bottom:14px solid rgba(252, 58, 74, 0.5)}}
 
 .contact__text{
     font-size:1.8rem;
@@ -657,7 +656,7 @@ button{
 .projects__heading:before{
     position:absolute;
     content:'';
-    border-bottom:18px solid rgba(253, 0, 17, 0.4);
+    border-bottom:18px solid rgba(252, 58, 74, 0.5);
     width:22.5rem;
     display:block;
     margin:0 auto;
@@ -667,7 +666,7 @@ button{
     z-index:-1
 }
 
-@media (max-width: 770px){.projects__heading:before{border-bottom:14px solid rgba(253, 0, 17, 0.4)}}
+@media (max-width: 770px){.projects__heading:before{border-bottom:14px solid rgba(252, 58, 74, 0.5)}}
 
 .project{
     position:relative;
@@ -759,7 +758,7 @@ button{
     position:absolute;
     content:'';
     height:2px;
-    background-color:#ff4d5a;
+    background-color:rgba(252, 58, 74);
     width:100%;
     bottom:1px;
     display:block;
@@ -792,7 +791,7 @@ button{
 .project__live:after,.project__code:after{
     position:absolute;
     content:'';
-    border-bottom:2px solid #ff4d5a;
+    border-bottom:2px solid rgba(252, 58, 74);
     width:calc(100% + 2rem);
     left:-10%;
     top:0.5rem;
