@@ -435,7 +435,7 @@ button{
     margin-left:auto;
     margin-right:auto;
     display:flex;
-    width:500px;
+    width:600px;
     flex-direction:column;
     align-items:center;
     justify-content:center;
@@ -467,7 +467,8 @@ button{
 
 .contact__text{
     font-size:1.8rem;
-    margin-bottom:6rem
+    margin-bottom:6rem;
+    text-align: center;
 }
 
 @media (max-width: 600px) {.contact__text {text-align: center}}
