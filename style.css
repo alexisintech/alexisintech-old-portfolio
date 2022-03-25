@@ -195,6 +195,7 @@ button{
 }
 
 @media (max-width: 1200px){.navigation{margin-right:3rem}}@media (max-width: 700px){.navigation{margin-right:0}}
+@media (max-width: 260px){.navigation{width:100vw;justify-content:center;font-size:1rem}}
 
 .navigation-bar{
     position:sticky;
@@ -445,6 +446,7 @@ button{
 @media (max-width: 470px){.contact{width:330px}}
 @media (max-width:600px){.contact{margin-top:30px}}
 @media (max-width: 400px){.contact{width:260px}}
+@media (max-width: 260px){.contact{width: 100vw}}
 
 .contact__heading{
     margin-top:-4rem !important;
@@ -694,6 +696,7 @@ button{
 }
 
 @media (max-width: 1100px){.project__image-container{height:64rem;width:90rem}}
+@media (max-width: 1350px) and (min-width: 1201px){.project__image-container{height:58rem;width:80rem}}
 @media (max-width: 970px){.project__image-container{height:58rem;width:80rem}}
 @media (max-width: 900px){.project__image-container{height:54rem;width:75rem}}
 @media (max-width: 800px){.project__image-container{width:60rem;height:40rem;}}
@@ -739,7 +742,10 @@ button{
     z-index:999909999
 }
 
-@media (max-width: 600px){.project__description{margin-top:2rem; width: 100%}}
+@media (max-width: 2500px) and (min-width: 18050){.project__description{margin-right:10em}}
+@media (max-width: 450px){.project__description{padding: 0 10px}}
+@media (max-width: 600px){.project-left .project__description{margin-top:2rem; width: 100%;text-align:center}}
+@media (max-width: 600px){.project-right .project__description{width: 100%;text-align:center !important}}
 
 .project__live-2{
     font-size:1.6rem;
@@ -823,7 +829,9 @@ button{
 }
 
 @media (max-width: 1700px){.project-left{margin-left:11rem}}
-@media (max-width: 1500px) and (min-width: 440px){.project-left{margin-left:2rem}}
+@media (max-width: 1499px) and (min-width: 1201px){.project-left{margin-left:11rem}}
+@media (max-width: 1200px) and (min-width: 440px){.project-left{margin-left:3rem}}
+@media (max-width: 1200px) and (min-width: 440px){.project-right{margin-right:3rem !important}}
 @media (max-width: 600px) {.project-left{margin-left: 0; align-self: center;}}
 
 .project-left .project__info{
@@ -842,21 +850,21 @@ button{
 }
 
 @media (max-width: 1700px){.project-right{margin-right:11rem}}
-@media (max-width: 1500px){.project-right{margin-right:0}}
-@media (max-width: 600px){.project-right{align-self:center;}}
+@media (max-width: 600px){.project-right{align-self:center;margin-right:0}}
 
 .project-right .project__info{
     right:-6rem;
     margin-left:-2rem
 }
 
-@media (max-width: 800px){.project-right .project__info{display:flex;flex-direction:column;align-items:flex-end;margin-left:6rem;right:-1rem}
+@media (max-width: 800px){.project-right .project__info{display:flex;flex-direction:column;align-items:flex-end;margin-left:6rem;right:-3rem}
                           .project-right .project__description{text-align:right;}}
-@media (max-width: 770px){.project-right .project__info{margin-left:8rem}}
-@media (max-width: 700px) and (min-width: 601px){.project-right .project__info{margin-left:4rem}}
+@media (max-width: 799px) and (min-width: 771px){.project-right .project__info{margin-left:0;}}
+@media (max-width: 770px){.project-right .project__info{margin-left:6rem}}
+@media (max-width: 700px) and (min-width: 601px){.project-right .project__info{margin-left:0}}
 @media (max-width: 600px){.project-right .project__info{margin-left:2rem}}
 @media (max-width: 599px){.project-right .project__info{left: 0; text-align:center;}}
-@media (max-width: 600px){.project-right .project__info{display:flex;flex-direction:column;align-items:center;margin-left:0}}
+@media (max-width: 600px){.project-right .project__info{display:flex;flex-direction:column;align-items:center;margin-left:0; text-align:center}}
 
 .maid{
     display:flex;
@@ -873,7 +881,7 @@ button{
 }
 
 @media (max-width: 800px){.sixela{margin-right: 2rem}}
-@media (max-width: 600px){.sixela{margin-right:0;margin-top:5em;justify-content:center;align-content:center}}
+@media (max-width: 600px){.sixela{margin-right:0;margin-top:5em;justify-content:center;align-content:center;text-align:center}}
 
 .fighter{
     display:flex;
