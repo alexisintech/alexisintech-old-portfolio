@@ -621,8 +621,12 @@ button{
 
 .copyright{
     color:#fafafa;
-    font-size:10px;
+    font-size:1.5rem;
     font-weight:500}
+
+.copyright:hover {
+    color: rgba(252, 58, 74);
+}
     
 .return-home{
     position:absolute;
