@@ -252,11 +252,12 @@ button{
 
 .about__content{
     display:flex;
-    gap: 20rem;
+    gap: 25rem;
     width:100%;
-    margin-left: 200px;
+    /* margin-left: 200px; */
 }
 
+@media (max-width: 1500px){.about__content{gap: 15rem}}
 @media (max-width: 1300px){.about__content{flex-direction:column;gap: 0px;margin-left: 0px}}
 
 /* ===================== Left side of About section (includes profile pic and bio) ===================== */
@@ -267,8 +268,8 @@ button{
     align-items:center;
     font-weight:500;
     opacity:0;
-    transition:all 1.1s;
-    left:-300px;
+    transition:all 1.3s;
+    /* left:-300px; */
     gap: 30px;
 }
 
@@ -310,10 +311,10 @@ button{
 
 .profile__fade-in{
     opacity:1;
-    transform:translateX(300px)
+    /* transform:translateX(300px) */
 }
 
-@media (max-width: 1300px){.profile__fade-in{transform:translateX(0)}}
+/* @media (max-width: 1300px){.profile__fade-in{transform:translateX(0)}} */
 
 /* ===================== SKILLS (NEXT TO PROFILE PICTURE) ===================== */
 .skills{
