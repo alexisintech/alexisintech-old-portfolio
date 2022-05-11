@@ -85,7 +85,8 @@ button{
     margin-right:auto;
     color:#fafafa;
     font-weight:300;
-    z-index:999
+    z-index:999;
+    gap: 10px;
 }
 
 .heading__line-1{animation-name:moveInLeft}
@@ -101,11 +102,23 @@ button{
     font-size:6rem;
     background-color:rgba(26,26,26,0.25);
     animation-duration:1.4s;
-    animation-timing-function:cubic-bezier(0.21, 1.11, 0.81, 0.99)
+    animation-timing-function:cubic-bezier(0.21, 1.11, 0.81, 0.99);
 }
 
-@media (max-width: 700px){.heading__line-1,.heading__line-2{font-size:5rem;text-align:center;margin-left:4rem;margin-right:4rem}}
-@media (max-width: 550px){.heading__line-1,.heading__line-2{font-size:5rem}}
+.heading__line-2 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 0 5em;
+}
+
+@media (max-width: 700px){
+    .heading__line-1,.heading__line-2{font-size:5rem;text-align:center;margin-left:4rem;margin-right:4rem}
+    .heading__line-2{font-size: 3rem}
+}
+@media (max-width: 550px){
+    .heading__line-1,.heading__line-2{font-size:5rem}
+    .heading__line-2{font-size: 3rem}
+}
 
 .heading-cta{
     position:relative;
@@ -252,28 +265,27 @@ button{
 
 .about__content{
     display:flex;
-    gap: 25rem;
+    gap: 10rem;
     width:100%;
-    /* margin-left: 200px; */
+    justify-content: center;
 }
 
 @media (max-width: 1500px){.about__content{gap: 15rem}}
-@media (max-width: 1300px){.about__content{flex-direction:column;gap: 0px;margin-left: 0px}}
+@media (max-width: 1100px){.about__content{flex-direction:column;gap: 0px;margin-left: 0px}}
 
 /* ===================== Left side of About section (includes profile pic and bio) ===================== */
 .profile{
     position:relative;
     display:flex;
     flex-direction:column;
-    align-items:center;
+    /* align-items:center; */
     font-weight:500;
     opacity:0;
     transition:all 1.3s;
-    /* left:-300px; */
     gap: 30px;
 }
 
-@media (max-width: 1301px){.profile{margin-bottom:10rem;left:0;opacity:1}}
+@media (max-width: 1301px){.profile{opacity:1}}
 @media (max-width: 1000px){.profile{margin-bottom:7rem}}
 
 .profile__picture{
@@ -301,7 +313,8 @@ button{
 /* ===================== The bio paragraph under profile picture ===================== */
 .profile__blurb{
     display: flex;
-    text-align: center;
+    /* text-align: center; */
+    padding-left: 15px;
     font-size:1.8rem;
     width:500px;
     line-height:1.8
@@ -311,10 +324,7 @@ button{
 
 .profile__fade-in{
     opacity:1;
-    /* transform:translateX(300px) */
 }
-
-/* @media (max-width: 1300px){.profile__fade-in{transform:translateX(0)}} */
 
 /* ===================== SKILLS (NEXT TO PROFILE PICTURE) ===================== */
 .skills{
