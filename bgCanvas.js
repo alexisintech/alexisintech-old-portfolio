@@ -1,3 +1,5 @@
+/*  Inspiration credit to benscott.dev ||  https://github.com/bscottnz/portfolio-site  */
+
 const canvasDotsBg = function () {
     const canvas = document.querySelector('.canvas-2'),
       ctx = canvas.getContext('2d'),
