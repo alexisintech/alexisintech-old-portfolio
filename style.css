@@ -119,6 +119,8 @@ button{
     .heading__line-1,.heading__line-2{font-size:5rem}
     .heading__line-2{font-size: 3rem}
 }
+@media (max-width: 425px){.heading__line-2{font-size: 3rem; padding: 0 30px}}
+
 
 .heading-cta{
     position:relative;
@@ -271,7 +273,8 @@ button{
 }
 
 @media (max-width: 1200px){.about__content{gap: 0}}
-@media (max-width: 1100px){.about__content{flex-direction:column;gap: 0px;margin-left: 0px}}
+@media (max-width: 1440px) and (min-width: 1024px) {.about__content{padding: 0 40px}}
+@media (max-width: 1023px){.about__content{opacity:1;flex-direction:column;gap: 0px;margin-left: 0px}}
 
 /* ===================== Left side of About section (includes profile pic and bio) ===================== */
 .profile{
@@ -285,8 +288,8 @@ button{
     gap: 30px;
 }
 
-@media (max-width: 1301px){.profile{opacity:1}}
-@media (max-width: 1000px){.profile{margin-bottom:7rem}}
+@media (max-width: 1023px){.profile{margin-bottom:7rem;opacity:1; align-items:center;}}
+@media (max-width: 1440px) and (min-width: 1024px) {.profile{width:50%}}
 
 .profile__picture{
     height:36.5rem;
@@ -321,6 +324,7 @@ button{
 }
 
 @media (max-width: 1200px){.profile__blurb{padding-right:6em}}
+@media (max-width: 1023px){.profile__blurb{align-items:center;text-align:center;padding: 0 25px}}
 @media (max-width: 600px){.profile__blurb{width:80vw;margin-left:auto;margin-right:auto}}
 
 .profile__fade-in{
@@ -332,6 +336,8 @@ button{
     display:flex;
     justify-content:center
 }
+
+@media (max-width: 1440px) and (min-width: 1024px) {.skills{width:50%}}
 
 .skills__row{
     display:flex;
@@ -366,12 +372,13 @@ button{
 }
 
 @media (max-width: 1500px){.skills__item{height:90px;width:145px}}
-@media (max-width: 1300px){.skills__item{opacity:1;border-width:2px}}
+@media (max-width: 1300px){.skills__item{border-width:2px}}
 @media (max-width: 1000px){.skills__item{height:80px;width:130px}}
 @media (max-width: 600px){.skills__item{height:70px;width:115px}}
 @media (max-width: 500px){.skills__item{height:60px;width:100px}}
 @media (max-width: 410px){.skills__item{height:50px;width:80px}}
 @media (max-width: 340px){.skills__item{height:45px;width:70px}}
+@media (max-width: 1023px){.skills__item{opacity:1}}
 
 .skills__item:not(:last-child){
     margin-bottom:3rem
@@ -614,7 +621,8 @@ button{
     background-color:#282828
 }
 
-@media (max-width: 440px) {.footer {height: 120px}}
+@media (max-width: 1023px){.footer{height:120px}}
+@media (max-width: 425px){.footer{height:100px}}
 
 .socials{
     display:flex;
