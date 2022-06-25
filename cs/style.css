@@ -300,6 +300,7 @@ button{
 
 @media all and (max-width: 1023px){.profile{margin-bottom:7rem;opacity:1; align-items:center;}}
 @media all and (max-width: 1440px) and (min-width: 1024px) {.profile{width:50%}}
+@media all and (max-width: 450px) {.profile{gap:4rem}}
 
 .profile__picture{
     height:36.5rem;
@@ -505,7 +506,7 @@ button{
 
 @media all and (max-width:450px) {
     .projects-row, .projects-bottomrow {
-        gap:4rem;
+        gap:2rem;
         padding:1rem 3rem;
     }
 }
@@ -650,6 +651,10 @@ button{
 }
 
 #oneHundoHours .slideshow-container p, #leetcoderz .slideshow-container p {font-size:3rem}
+
+@media all and (max-width:425px) {
+    #oneHundoHours .slideshow-container p, #leetcoderz .slideshow-container p {font-size:1.8rem}
+}
 
 .project__title{
     font-size:3.5rem
