@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>alexisintech | Full Stack Software Engineer</title>
     <link rel="icon" href="imgs/favicon_io/favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="jason.css">
+    <link rel="stylesheet" href="/cs/style.css">
+    <link rel="stylesheet" href="/cs/bio.css">
   </head>
   <body>
     
@@ -65,165 +65,183 @@
         <div class="profile">
           <div class="profile__picture">
             <img src="./imgs/option3.png">
-          </div>
+          </div> <!-- class="profile__picture" -->
           
-          <!-- Added Jason's Bio -->
+          <!-- BIO SWITCHER -->
+          <!-- Credit to Jason Langstorf - https://jason.af/ -->
           <section id="bio" class="block bio-block">
-          <div class="bio-container">
-            <div>
-              <form class="bio-length-control" id="biolength">
-                <fieldset class="bio-fieldset">
-                  <legend class="bio-legend">Adjust bio length:</legend>
-                  <div class="bio-length-options">
-                    
-                    
-                    <div class="bio-option">
-                      <input
-                        class="bio-input"
-                        type="radio"
-                        id="length-shortest"
-                        name="biolength"
-                        value="shortest"
-                      />
-                      <label for="length-shortest" class="bio-label">
-                        <span class="bio-label-text">shortest</span>
-                      </label>
-                    </div>
-                    
-                    <div class="bio-option">
-                      <input
-                        class="bio-input"
-                        type="radio"
-                        id="length-shorter"
-                        name="biolength"
-                        value="shorter"
-                      />
-                      <label for="length-shorter" class="bio-label">
-                        <span class="bio-label-text">shorter</span>
-                      </label>
-                    </div>
-                    
-                    <div class="bio-option">
-                      <input
-                        class="bio-input"
-                        type="radio"
-                        id="length-short"
-                        name="biolength"
-                        value="short"
-                        checked
-                      />
-                      <label for="length-short" class="bio-label">
-                        <span class="bio-label-text">short</span>
-                      </label>
-                    </div>
-                    
-                    <div class="bio-option">
-                      <input
-                        class="bio-input"
-                        type="radio"
-                        id="length-long"
-                        name="biolength"
-                        value="long"
-                        
-                      />
-                      <label for="length-long" class="bio-label">
-                        <span class="bio-label-text">long</span>
-                      </label>
-                    </div>
-                    
-                    <div class="bio-option">
-                      <input
-                        class="bio-input"
-                        type="radio"
-                        id="length-longer"
-                        name="biolength"
-                        value="longer"
-                      />
-                      <label for="length-longer" class="bio-label">
-                        <span class="bio-label-text">longer</span>
-                      </label>
-                    </div>
-                    
-                    <div class="bio-option">
-                      <input
-                        class="bio-input"
-                        type="radio"
-                        id="length-longest"
-                        name="biolength"
-                        value="longest"
-                      />
-                      <label for="length-longest" class="bio-label">
-                        <span class="bio-label-text">longest</span>
-                      </label>
-                    </div> <!-- class="bio-option" -->
-                    
-                  </div> <!-- class="bio-length-options" -->
-                </fieldset> <!-- class="bio-fieldset" -->
-              </form> <!-- class="bio-length-control" id="biolength" -->
-        
-            <template id="bios">
-              <p data-length="shortest">
-                <strong>Jason Lengstorf</strong> is trying his very best.
-              </p>
-              <p data-length="shorter">
-                <strong>Jason Lengstorf</strong> works at 
-                <a href="https://ntl.fyi/jason-bio">Netlify</a> and hosts 
-                <a href="https://lwj.dev/"><em>Learn With Jason</em></a>. 
-                He's trying his very best.
-              </p>
-              <p data-length="short">
-                
-              </p>
-              <p data-length="long">
-                <strong>Jason Lengstorf</strong> is the VP of Developer Experience at 
-                <a href="https://ntl.fyi/jason-bio">Netlify</a> and the host of 
-                <a href="https://lwj.dev/"><em>Learn With Jason</em></a>, a 
-                live-streamed video show where he pair programs to learn something new 
-                in 90 minutes. As a keynote speaker and author, Jason focuses on 
-                building healthier teams through trust, curiosity, and play. He's trying 
-                his very best to follow his own advice. He lives in Portland, Oregon.
-              </p>
-              <p data-length="longer">
-                <strong>Jason Lengstorf</strong> is the VP of Developer Experience at 
-                <a href="https://ntl.fyi/jason-bio">Netlify</a>, where he's helping 
-                build the workflow for the modern web. He hosts 
-                <a href="https://lwj.dev/"><em>Learn With Jason</em></a>, 
-                a live-streamed video show where he pair programs to learn something 
-                new in 90 minutes. As a keynote speaker and author, Jason focuses on 
-                building healthier teams through trust, curiosity, and play. He's trying 
-                his very best to follow his own advice. He lives in Portland, Oregon.
-              </p>
-              <p data-length="longest">
-                <strong>Jason Lengstorf</strong> is the VP of Developer Experience at 
-                <a href="https://ntl.fyi/jason-bio">Netlify</a>, where he's helping 
-                build the workflow for the modern web. He hosts 
-                <a href="https://lwj.dev/"><em>Learn With Jason</em></a>, 
-                a live-streamed video show where he pair programs to learn something new 
-                in 90 minutes. As a keynote speaker and author, Jason focuses on 
-                building healthier teams through trust, curiosity, and play. 
-                Outside of work, he's on a mission to 
-                <a href="https://burgers.dev">perfect the smashburger and vanquish his 
-                enemies</a>. When this whole internet thing goes out of style, he'll 
-                probably open a food truck in his home city of Portland, Oregon.
-              </p>
-            </template> <!-- id="bios"-->
-              
-              <p class="bio">
-                
-                <strong>Jason Lengstorf</strong> works at 
-                <a href="https://ntl.fyi/jason-bio">Netlify</a> and hosts 
-                <a href="https://lwj.dev/"><em>Learn With Jason</em></a>. 
-                As a keynote speaker and author, Jason focuses on building healthier 
-                teams through trust, curiosity, and play. He's trying his very best to 
-                follow his own advice. He lives in Portland, Oregon.
-                
-              </p>
+            <div class="bio-container">
+              <div>
+                <form class="bio-length-control" id="biolength">
+                  <fieldset class="bio-fieldset">
+                    <legend class="bio-legend">Adjust bio length:</legend>
+                    <div class="bio-length-options">
+                      
+                      
+                      <div class="bio-option">
+                        <input
+                          class="bio-input"
+                          type="radio"
+                          id="length-shortest"
+                          name="biolength"
+                          value="shortest"
+                          data-sound-hover="pop"
+                          data-sound-focus="click"
+                          data-sound-click="click"
+                          
+                        />
+                        <label for="length-shortest" class="bio-label">
+                          <span class="bio-label-text">shortest</span>
+                        </label>
+                      </div> <!-- class="bio-option" -->
+                      
+                      <div class="bio-option">
+                        <input
+                          class="bio-input"
+                          type="radio"
+                          id="length-shorter"
+                          name="biolength"
+                          value="shorter"
+                          data-sound-hover="pop"
+                          data-sound-focus="click"
+                          data-sound-click="click"
+                          
+                        />
+                        <label for="length-shorter" class="bio-label">
+                          <span class="bio-label-text">shorter</span>
+                        </label>
+                      </div> <!-- class="bio-option" -->
+                      
+                      <div class="bio-option">
+                        <input
+                          class="bio-input"
+                          type="radio"
+                          id="length-short"
+                          name="biolength"
+                          value="short"
+                          data-sound-hover="pop"
+                          data-sound-focus="click"
+                          data-sound-click="click"
+                          checked
+                        />
+                        <label for="length-short" class="bio-label">
+                          <span class="bio-label-text">short</span>
+                        </label>
+                      </div> <!-- class="bio-option" -->
+                      
+                      <div class="bio-option">
+                        <input
+                          class="bio-input"
+                          type="radio"
+                          id="length-long"
+                          name="biolength"
+                          value="long"
+                          data-sound-hover="pop"
+                          data-sound-focus="click"
+                          data-sound-click="click"
+                          
+                        />
+                        <label for="length-long" class="bio-label">
+                          <span class="bio-label-text">long</span>
+                        </label>
+                      </div> <!-- class="bio-option" -->
+                      
+                      <div class="bio-option">
+                        <input
+                          class="bio-input"
+                          type="radio"
+                          id="length-longer"
+                          name="biolength"
+                          value="longer"
+                          data-sound-hover="pop"
+                          data-sound-focus="click"
+                          data-sound-click="click"
+                          
+                        />
+                        <label for="length-longer" class="bio-label">
+                          <span class="bio-label-text">longer</span>
+                        </label>
+                      </div> <!-- class="bio-option" -->
+                      
+                      <div class="bio-option">
+                        <input
+                          class="bio-input"
+                          type="radio"
+                          id="length-longest"
+                          name="biolength"
+                          value="longest"
+                          data-sound-hover="pop"
+                          data-sound-focus="click"
+                          data-sound-click="click"
+                          
+                        />
+                        <label for="length-longest" class="bio-label">
+                          <span class="bio-label-text">longest</span>
+                        </label>
+                      </div> <!-- class="bio-option" -->
+                      
+                    </div> <!-- class="bio-length-options" -->
+                  </fieldset> <!-- class="bio-fieldset" -->
+                </form> <!-- class="bio-length-control" id="biolength" -->
+          
+              <template id="bios">
+                <p data-length="shortest">
+                  <strong>Alexis Aguiar</strong> is currently changing her life.
+                </p>
+                <p data-length="shorter">
+                  <strong>Alexis Aguilar</strong> is a community-taught full-stack web developer.
+                  She is currently changing her entire life.
+                </p>
+                <p data-length="short">
+                  <strong>Alexis Aguilar</strong> is a community-taught full-stack web developer.
+                  As a diligent and meticulous programmer, she is passionate about 
+                  delivering creative designs and constantly learning.
+                  She is currently in Florida, USA, working hard every single day to change her life.
+                </p>
+                <p data-length="long">
+                  <strong>Alexis Aguilar</strong> is a community-taught full-stack web developer, 
+                  who is incredibly passionate about her mantra: "forever learning".
+                  Every day, she fulfills a goal of learning, at minimum, two new concepts. 
+                  As a diligent and meticulous programmer, she is passionate about 
+                  delivering creative designs and organized, polished code.
+                  She is currently in Florida, USA, working hard every single day to change her life.
+                </p>
+                <p data-length="longer">
+                  <strong>Alexis Aguilar</strong> is a community-taught full-stack web developer
+                  and spends her free time building connections with fellow developers.
+                  Alexis is incredibly passionate about her mantra: "forever learning".
+                  Every day, she fulfills a goal of learning, at minimum, two new concepts. 
+                  As a diligent and meticulous programmer, she is passionate about 
+                  delivering creative designs and organized, polished code.
+                  She is currently in Florida, USA, working hard every single day to change her life.
+                </p>
+                <p data-length="longest">
+                  <strong>Alexis Aguilar</strong> is a community-taught full-stack web developer
+                  and spends her free time building connections with fellow developers.
+                  Alexis is incredibly passionate about her mantra: "forever learning".
+                  Every day, she fulfills a goal of learning, at minimum, two new concepts. 
+                  As a diligent and meticulous programmer, she is passionate about 
+                  delivering creative designs and organized, polished code.
+                  She is currently in Florida, USA, working hard every single day to change her life.
+                  Aside from programming, she enjoys weight lifting, spirituality, teaching, and mental health advocation.
+                </p>
+              </template> <!-- id="bios" -->
 
             </div>
+
+            <p class="bio">
+                  
+              <strong>Alexis Aguilar</strong> is a community-taught full-stack web developer.
+              As a diligent and meticulous programmer, she is passionate about 
+              delivering creative designs and organized, polished code.
+              She is currently in Florida, USA, working hard every single day to change her life.
+              
+            </p>
+            
           </div> <!-- class="bio-container" -->
         </section> <!-- id="bio" class="block bio-block" -->
 
-        </div>
+        </div> <!-- class="profile"-->
 
         <div class="skills">
           <div class="skills__row">
@@ -286,9 +304,9 @@
               <img src="./assets/git.png" alt="" />
             </div>
           </div> -->
-        </div>
-      </div>
-    </section>
+        </div> <!-- class="skills"-->
+      </div> <!-- class="about__content-->
+    </section> <!-- class="about" id="about" -->
 
     <section class="projects" id="projects">
       <h2 class="projects__heading section-heading"><!--Projects--></h2>
@@ -460,6 +478,6 @@
     <script src="/js/main.js"></script>
     <script src="/js/heroCanvas.js"></script>
     <script src="/js/bgCanvas.js"></script>
-    <script src="/js/jason.js"></script>
+    <script src="/js/additions.js"></script>
 </body>
 </html>
