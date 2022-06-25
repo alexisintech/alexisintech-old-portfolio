@@ -263,16 +263,22 @@
 }
 
 .bio-length-options {
-  align-items: center;
   display: grid;
-  gap: 4rem;
+  gap: 1rem;
   grid-template-columns: repeat(6, 1fr);
   margin-top:5px;
+  position:relative;
+  left:-35px;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1442px) and (min-width:1026px) {
   .bio-length-options {
-    gap:1rem;
+    left:-25px;
+  }
+}
+
+@media all and (max-width: 1025px) {
+  .bio-length-options {
     position:relative;
     left:-20px;
   }
@@ -319,11 +325,17 @@
 }
 
 .bio-option:first-of-type .bio-label-text {
-  left: -5px;
+  left: 32px;
   text-align: left;
 }
 
-@media all and (max-width: 1026px) {
+@media all and (max-width: 1442px) and (min-width: 1026px) {
+  .bio-option:first-of-type .bio-label-text {
+    left:18px;
+  }
+}
+
+@media all and (max-width: 1025px) {
   .bio-option:first-of-type .bio-label-text {
     left:15px;
   }
@@ -336,11 +348,17 @@
 }
 
 .bio-option:last-of-type .bio-label-text {
-  right: -5px;
+  right: 32px;
   text-align: right;
 }
 
-@media all and (max-width: 1026px) {
+@media all and (max-width: 1442px) and (min-width: 1026px) {
+  .bio-option:last-of-type .bio-label-text {
+    right:18px;
+  }
+}
+
+@media all and (max-width: 1025px) {
   .bio-option:last-of-type .bio-label-text {
     right:15px;
   }

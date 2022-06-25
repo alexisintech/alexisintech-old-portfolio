@@ -95,7 +95,7 @@ button{
 
 .heading__line-1{
     animation-name:moveInLeft; 
-    font-size:4rem;
+    font-size:5rem;
 }
 
 .heading__line-1 span{
@@ -112,7 +112,7 @@ button{
 }
 
 .heading__line-2 {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     padding: 0 11em;
 }
