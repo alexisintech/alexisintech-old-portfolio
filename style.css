@@ -112,12 +112,12 @@ button{
 .heading__line-2 {
     font-size: 4rem;
     text-align: center;
-    padding: 0 7em;
+    padding: 0 11em;
 }
 
-@media (max-width:1280px){
-    .heading__line-2 {padding: 0 5em}
-}
+@media (max-width:1440px) {.heading__line-2{padding: 0 7em}}
+@media (max-width:1000px) {.heading__line-2 {padding: 0 3em}}
+@media (max-width:450px) {.heading__line-2 {padding: 0 2em}}
 
 @media (max-width: 700px){
     .heading__line-1,.heading__line-2{font-size:5rem;text-align:center;margin-left:4rem;margin-right:4rem}
@@ -125,7 +125,7 @@ button{
 }
 @media (max-width: 550px){
     .heading__line-1{font-size:4rem}
-    .heading__line-2{font-size: 2.2rem;padding: 0 40px}
+    .heading__line-2{font-size: 2.2rem}
 }
 
 
