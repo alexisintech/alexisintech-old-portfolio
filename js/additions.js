@@ -22,9 +22,10 @@ options.addEventListener('change', (event) => {
 // ===================================================================
 
 let slideIndex = [1,2]; // Chooses the indexes of array "slideId" (on line 25)
-let slideId = ["mySlides1", "mySlides2"] // Classed the members of each slideshow group with different CSS classes. Placed them in array
+let slideId = ["mySlides1", "mySlides2", "mySlides3"] // Classed the members of each slideshow group with different CSS classes. Placed them in array
 showSlides(1, 0);
 showSlides(1, 1);
+showSlides(1, 2);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
