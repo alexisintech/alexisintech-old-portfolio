@@ -512,7 +512,7 @@ button{
   }
   
   /* Hide the images by default */
-  .mySlides {
+  .mySlides1, .mySlides2, .mySlides3 {
     display: none;
   }
   
@@ -588,7 +588,7 @@ button{
     to {opacity: 1}
   }
 
-#oneHundoHours .slideshow-container {
+#oneHundoHours .slideshow-container, #leetcoderz .slideshow-container {
     content: "";
     background-color:rgb(26, 26, 26, 0.5);
     width:100%;
@@ -598,7 +598,7 @@ button{
     align-items:center;
 }
 
-#oneHundoHours .slideshow-container p {font-size:3rem}
+#oneHundoHours .slideshow-container p, #leetcoderz .slideshow-container p {font-size:3rem}
 
 .project__title{
     font-size:3.5rem
@@ -902,7 +902,9 @@ button{
 .copyright{
     color:#fafafa;
     font-size:1.5rem;
-    font-weight:500}
+    font-weight:500;
+    align-self:center;
+}
 
 .copyright:hover {
     color: rgba(252, 58, 74);
