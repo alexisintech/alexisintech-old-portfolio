@@ -89,6 +89,10 @@ button{
     gap: 10px;
 }
 
+@media (max-width:425px){
+    .heading{gap:15px}
+}
+
 .heading__line-1{animation-name:moveInLeft}
 
 .heading__line-1 span{
@@ -108,7 +112,11 @@ button{
 .heading__line-2 {
     font-size: 4rem;
     text-align: center;
-    padding: 0 5em;
+    padding: 0 7em;
+}
+
+@media (max-width:1280px){
+    .heading__line-2 {padding: 0 5em}
 }
 
 @media (max-width: 700px){
@@ -116,10 +124,9 @@ button{
     .heading__line-2{font-size: 3rem}
 }
 @media (max-width: 550px){
-    .heading__line-1,.heading__line-2{font-size:5rem}
-    .heading__line-2{font-size: 3rem}
+    .heading__line-1{font-size:4rem}
+    .heading__line-2{font-size: 2.2rem;padding: 0 40px}
 }
-@media (max-width: 425px){.heading__line-2{font-size: 3rem; padding: 0 30px}}
 
 
 .heading-cta{
@@ -245,12 +252,13 @@ button{
     display:flex;
     flex-direction:column;
     align-items:center;
+    text-align:center;
 }
 
 @media (max-width: 1500px){.about{width:1100px}}
 @media (max-width: 1200px){.about{width:auto}}
 
-.about__heading:before{
+/* .about__heading:before{
     position:absolute;
     content:'';
     border-bottom:18px solid rgba(252, 58, 74, 0.5);
@@ -263,7 +271,7 @@ button{
     z-index:-1
 }
 
-@media (max-width: 770px){.about__heading:before{border-bottom:14px solid rgba(252, 58, 74, 0.5)}}
+@media (max-width: 770px){.about__heading:before{border-bottom:14px solid rgba(252, 58, 74, 0.5)}} */
 
 .about__content{
     display:flex;
@@ -447,237 +455,6 @@ button{
     100%{opacity:1}
 }
 
-/* ===================== CONTACT SECTION ===================== */
-
-.contact{
-    position:relative;
-    margin-left:auto;
-    margin-right:auto;
-    display:flex;
-    width:600px;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    z-index:10;
-    margin-bottom:10rem
-}
-@media (max-width: 700px){.contact{width:400px}}
-@media (max-width: 470px){.contact{width:330px}}
-@media (max-width:600px){.contact{margin-top:30px}}
-@media (max-width: 400px){.contact{width:260px}}
-@media (max-width: 260px){.contact{width: 100vw}}
-
-.contact__heading{
-    margin-top:-4rem !important;
-    margin-bottom:6rem !important
-}
-.contact__heading:before{
-    position:absolute;content:'';
-    border-bottom:18px solid rgba(252, 58, 74, 0.5);
-    width:37rem;
-    display:block;
-    margin:0 auto;
-    position:relative;
-    left:2.5rem;
-    top:6.5rem;
-    z-index:-1
-}
-@media (max-width: 770px){.contact__heading:before{border-bottom:14px solid rgba(252, 58, 74, 0.5)}}
-
-.contact__text{
-    font-size:1.8rem;
-    margin-bottom:6rem;
-    text-align: center;
-}
-
-@media (max-width: 600px) {.contact__text {text-align: center}}
-
-/* .contact__form{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center
-}
-
-.contact__form-name,.contact__form-email{
-    margin-bottom:6px;
-    padding:1rem;
-    height:4rem
-}
-
-.contact__form-message{
-    height:12rem;
-    padding:1rem
-}
-
-.contact__form-submit-2{
-    align-self:flex-start;
-    margin-top:0 !important
-}
-
-.contact__form-submit{
-    align-self:flex-start;
-    position:relative;
-    padding:0.6rem 1rem;
-    width:fit-content;
-    font-size:1.6rem;
-    text-transform:uppercase;
-    font-weight:700;
-    letter-spacing:3px;
-    z-index:9;
-    cursor:pointer
-}
-
-.contact__form-submit:hover{
-    color:#1a1a1a;
-    font-weight:700
-}
-
-.contact__form-submit:after{
-    position:absolute;
-    content:'';
-    border-bottom:2px solid #ff4d5a;
-    width:calc(100% + 2rem);
-    left:-14%;top:0.5rem;
-    display:block;
-    margin:0 auto;
-    position:relative;
-    transform-origin:bottom;
-    transition:all 0.2s;
-    z-index:-1
-}
-
-.contact__form-submit:hover:after{
-    transform:scaleY(17.5)
-}
-
-@media (max-width: 1500px){.contact__form-submit:hover:after{transform:scaleY(16.5)}}
-@media (max-width: 1200px){.contact__form-submit:hover:after{transform:scaleY(14)}}
-@media (max-width: 770px){.contact__form-submit:hover:after{transform:scaleY(12.5)}}
-
-.contact input,.contact textarea{
-    width:500px;
-    resize:none;
-    border:none;
-    color:inherit;
-    background-color:#282828;
-    font-size:1.6rem;
-    font-family:monserrat, sans-serif;
-    border-left:2px solid transparent;
-    border-radius:0
-}
-
-@media (max-width: 700px){.contact input,.contact textarea{width:400px}}
-@media (max-width: 470px){.contact input,.contact textarea{width:330px}}
-@media (max-width: 400px){.contact input,.contact textarea{width:260px}}
-
-.contact input:focus,.contact textarea:focus{outline:none}
-
-.contact input::placeholder,.contact textarea::placeholder{
-    color:rgba(250,250,250,0.6);
-    opacity:1
-}
-
-.contact input :-ms-input-placeholder,.contact textarea :-ms-input-placeholder{
-    color:rgba(250,250,250,0.6)
-}
-
-.contact input ::-ms-input-placeholder,.contact textarea ::-ms-input-placeholder{
-    color:rgba(250,250,250,0.6)
-}
-
-.contact__form-error-submit{
-    margin-top:1.5rem;
-    height:7rem;width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center
-} */
-
-/* .form-error{
-    align-self:start;
-    font-size:1.6rem;
-    font-weight:500;
-    line-height:1.5
-}
-
-.form-error>*{
-    display:none
-}
-
-.input-error{
-    border-left:2px solid #ff4d5a !important
-} */
-
-/* ===================== FOOTER ===================== */
-
-.footer{
-    position:relative;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    height:160px;
-    background-color:#282828
-}
-
-@media (max-width: 1023px){.footer{height:120px}}
-@media (max-width: 425px){.footer{height:100px}}
-
-.socials{
-    display:flex;
-    margin-bottom:20px;
-    gap: 3rem;
-}
-
-.socials a{
-    cursor:pointer;
-    transition:all 0.2s;
-}
-
-.socials a:hover{transform:scale(1.2)}
-
-.socials img{height:100%}
-
-.copyright{
-    color:#fafafa;
-    font-size:1.5rem;
-    font-weight:500}
-
-.copyright:hover {
-    color: rgba(252, 58, 74);
-}
-    
-.return-home{
-    position:absolute;
-    top:-25px;
-    width:40px;
-    height:45px;
-    margin-right:auto;
-    margin-left:auto;
-    left:0;
-    right:0;
-    text-align:center;
-    background-color:rgb(89, 158, 226, 0.8);
-    -webkit-animation-duration:1s;
-    animation-duration:1s;
-    -webkit-animation-fill-mode:both;
-    animation-fill-mode:both;
-    -webkit-animation-timing-function:ease-in-out;
-    animation-timing-function:ease-in-out;
-    animation-iteration-count:infinite;
-    -webkit-animation-iteration-count:infinite
-}
-
-.return-home:hover{
-    cursor:pointer;
-    animation-name:bounce;
-    -moz-animation-name:bounce
-}
-
-.return-home svg{width:100%}
-
-
 /* ===================== PROJECTS ===================== */
 
 .projects{
@@ -687,7 +464,7 @@ button{
     align-items:center
 }
 
-.projects__heading:before{
+/* .projects__heading:before{
     position:absolute;
     content:'';
     border-bottom:18px solid rgba(252, 58, 74, 0.5);
@@ -700,7 +477,7 @@ button{
     z-index:-1
 }
 
-@media (max-width: 770px){.projects__heading:before{border-bottom:14px solid rgba(252, 58, 74, 0.5)}}
+@media (max-width: 770px){.projects__heading:before{border-bottom:14px solid rgba(252, 58, 74, 0.5)}} */
 
 .project{
     position:relative;
@@ -927,4 +704,241 @@ button{
 
 @media (max-width: 1200px){.section-heading{margin-bottom:10rem}}
 @media (max-width: 1000px){.section-heading{margin-top:6rem}}
+@media (max-width:550px){.section-heading{margin-bottom:6rem}}
+
+/* ===================== CONTACT SECTION ===================== */
+
+.contact{
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    width:600px;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    z-index:10;
+    margin-bottom:10rem
+}
+@media (max-width: 700px){.contact{width:400px}}
+@media (max-width: 470px){.contact{width:330px}}
+@media (max-width:600px){.contact{margin-top:30px}}
+@media (max-width: 400px){.contact{width:260px}}
+@media (max-width: 260px){.contact{width: 100vw}}
+
+.contact__heading{
+    margin-top:-4rem !important;
+    margin-bottom:6rem !important
+}
+
+/* .contact__heading:before{
+    position:absolute;content:'';
+    border-bottom:18px solid rgba(252, 58, 74, 0.5);
+    width:37rem;
+    display:block;
+    margin:0 auto;
+    position:relative;
+    left:2.5rem;
+    top:6.5rem;
+    z-index:-1
+}
+@media (max-width: 770px){.contact__heading:before{border-bottom:14px solid rgba(252, 58, 74, 0.5)}} */
+
+.contact__text{
+    font-size:1.8rem;
+    margin-bottom:6rem;
+    text-align: center;
+}
+
+@media (max-width: 600px) {.contact__text {text-align: center}}
+
+#contact-me {
+    margin-top:10px;
+}
+
+/* .contact__form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center
+}
+
+.contact__form-name,.contact__form-email{
+    margin-bottom:6px;
+    padding:1rem;
+    height:4rem
+}
+
+.contact__form-message{
+    height:12rem;
+    padding:1rem
+}
+
+.contact__form-submit-2{
+    align-self:flex-start;
+    margin-top:0 !important
+}
+
+.contact__form-submit{
+    align-self:flex-start;
+    position:relative;
+    padding:0.6rem 1rem;
+    width:fit-content;
+    font-size:1.6rem;
+    text-transform:uppercase;
+    font-weight:700;
+    letter-spacing:3px;
+    z-index:9;
+    cursor:pointer
+}
+
+.contact__form-submit:hover{
+    color:#1a1a1a;
+    font-weight:700
+}
+
+.contact__form-submit:after{
+    position:absolute;
+    content:'';
+    border-bottom:2px solid #ff4d5a;
+    width:calc(100% + 2rem);
+    left:-14%;top:0.5rem;
+    display:block;
+    margin:0 auto;
+    position:relative;
+    transform-origin:bottom;
+    transition:all 0.2s;
+    z-index:-1
+}
+
+.contact__form-submit:hover:after{
+    transform:scaleY(17.5)
+}
+
+@media (max-width: 1500px){.contact__form-submit:hover:after{transform:scaleY(16.5)}}
+@media (max-width: 1200px){.contact__form-submit:hover:after{transform:scaleY(14)}}
+@media (max-width: 770px){.contact__form-submit:hover:after{transform:scaleY(12.5)}}
+
+.contact input,.contact textarea{
+    width:500px;
+    resize:none;
+    border:none;
+    color:inherit;
+    background-color:#282828;
+    font-size:1.6rem;
+    font-family:monserrat, sans-serif;
+    border-left:2px solid transparent;
+    border-radius:0
+}
+
+@media (max-width: 700px){.contact input,.contact textarea{width:400px}}
+@media (max-width: 470px){.contact input,.contact textarea{width:330px}}
+@media (max-width: 400px){.contact input,.contact textarea{width:260px}}
+
+.contact input:focus,.contact textarea:focus{outline:none}
+
+.contact input::placeholder,.contact textarea::placeholder{
+    color:rgba(250,250,250,0.6);
+    opacity:1
+}
+
+.contact input :-ms-input-placeholder,.contact textarea :-ms-input-placeholder{
+    color:rgba(250,250,250,0.6)
+}
+
+.contact input ::-ms-input-placeholder,.contact textarea ::-ms-input-placeholder{
+    color:rgba(250,250,250,0.6)
+}
+
+.contact__form-error-submit{
+    margin-top:1.5rem;
+    height:7rem;width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+} */
+
+/* .form-error{
+    align-self:start;
+    font-size:1.6rem;
+    font-weight:500;
+    line-height:1.5
+}
+
+.form-error>*{
+    display:none
+}
+
+.input-error{
+    border-left:2px solid #ff4d5a !important
+} */
+
+/* ===================== FOOTER ===================== */
+
+.footer{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:160px;
+    background-color:#282828
+}
+
+@media (max-width: 1023px){.footer{height:120px}}
+@media (max-width: 425px){.footer{height:100px}}
+
+.socials{
+    display:flex;
+    margin-bottom:20px;
+    gap: 3rem;
+}
+
+.socials a{
+    cursor:pointer;
+    transition:all 0.2s;
+}
+
+.socials a:hover{transform:scale(1.2)}
+
+.socials img{height:100%}
+
+.copyright{
+    color:#fafafa;
+    font-size:1.5rem;
+    font-weight:500}
+
+.copyright:hover {
+    color: rgba(252, 58, 74);
+}
+    
+.return-home{
+    position:absolute;
+    top:-25px;
+    width:40px;
+    height:45px;
+    margin-right:auto;
+    margin-left:auto;
+    left:0;
+    right:0;
+    text-align:center;
+    background-color:rgb(89, 158, 226, 0.8);
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-timing-function:ease-in-out;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite
+}
+
+.return-home:hover{
+    cursor:pointer;
+    animation-name:bounce;
+    -moz-animation-name:bounce
+}
+
+.return-home svg{width:100%}
+
 
