@@ -10,7 +10,7 @@ This website provides quick and easy access to my social media links. I built th
 ## How It's Made:
 
 **Tech used:** HTML, CSS, JavaScript     
-Portfolio layout and background credits go towards [Ben Scott](https://benscott.dev/)
+Portfolio layout and background credits go towards [Ben Scott](https://benscott.dev/)  
 Bio switcher credits go towards [Jason Langstorf](https://www.jason.af/)
 
 
