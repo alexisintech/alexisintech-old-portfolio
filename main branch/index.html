@@ -1,0 +1,534 @@
+<!-- Inspiration credit to benscott.dev ||  https://github.com/bscottnz/portfolio-site   -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alexisintech | Full Stack Software Engineer</title>
+    <link rel="icon" href="imgs/favicon_io/favicon.ico">
+    <link rel="stylesheet" href="cs/style.css">
+    <link rel="stylesheet" href="cs/bio.css">
+  </head>
+  <body>
+    
+    <div class="hero" id="hero">
+      
+      <div class="canvas">
+        <canvas class="connecting-dots"></canvas>
+      </div> <!-- class="canvas" -->
+      
+      <div class="heading">
+        <div class="heading__line-1">Hello, I'm <span>Alexis Aguilar</span>.</div>
+        <div class="heading__line-2">I'm a full-stack web developer, passionate about problem-solving and programming.</div>
+        <a href="#projects" class="heading__link">
+          <div class="heading-cta"> <!-- Appears as the "View My Work" button -->
+            View my work
+
+            <svg
+              class="heading__arrow"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <title>arrow-right</title>
+              <path
+                d="M11.293 5.707l5.293 5.293h-11.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h11.586l-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l7-7c0.092-0.092 0.166-0.202 0.217-0.324 0.101-0.245 0.101-0.521 0-0.766-0.049-0.118-0.121-0.228-0.217-0.324l-7-7c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"
+              ></path>
+            </svg> <!-- class="heading_arrow" -->
+          </div> <!-- class="heading-cta" -->
+        </a> <!-- class="heading__link" -->
+      </div> <!-- class="heading" -->
+    </div> <!-- class="hero" -->
+    
+    <nav class="navigation-bar">
+      <ul class="navigation">
+        <li class="navigation__item navigation__item--active" id="nav-hero"><a href="#hero">Home</a></li>
+        <li class="navigation__item" id="nav-about"><a href="#about">About</a></li>
+        <li class="navigation__item" id="nav-projects"><a href="#projects">Projects</a></li>
+        <li class="navigation__item" id="nav-clientwork"><a href="./pages/clientwork.html">Client Work</a></li>
+        <li class="navigation__item" id="nav-contact"><a href="#contact">Contact</a></li>
+      </ul> <!-- class="navigation" -->
+    </nav> <!-- class="navigation-bar" -->
+    
+    <div class="main-bg">
+      <div class="canvas">
+        <canvas class="canvas-2"></canvas>
+      </div> <!-- class="canvas" -->
+    </div> <!-- class="main-bg" -->
+    
+    <section class="about" id="about">
+      <h2 class="about__heading section-heading"><!--About--></h2>
+
+      <div class="about__content">
+        <div class="profile">
+          <div class="profile__picture">
+            <img src="./imgs/option3.png">
+          </div> <!-- class="profile__picture" -->
+          
+          <!-- BIO SWITCHER -->
+          <!-- Credit to Jason Langstorf - https://jason.af/ -->
+          <section id="bio" class="block bio-block">
+            <div class="bio-container">
+              <div>
+                <form class="bio-length-control" id="biolength">
+                  <fieldset class="bio-fieldset">
+                    <legend class="bio-legend">Adjust bio length:</legend>
+                    <div class="bio-length-options">
+                      
+                      
+                      <div class="bio-option">
+                        <input
+                          class="bio-input"
+                          type="radio"
+                          id="length-shortest"
+                          name="biolength"
+                          value="shortest"
+                          data-sound-hover="pop"
+                          data-sound-focus="click"
+                          data-sound-click="click"
+                          
+                        />
+                        <label for="length-shortest" class="bio-label">
+                          <span class="bio-label-text">shortest</span>
+                        </label>
+                      </div> <!-- class="bio-option" -->
+                      
+                      <div class="bio-option">
+                        <input
+                          class="bio-input"
+                          type="radio"
+                          id="length-shorter"
+                          name="biolength"
+                          value="shorter"
+                          data-sound-hover="pop"
+                          data-sound-focus="click"
+                          data-sound-click="click"
+                          
+                        />
+                        <label for="length-shorter" class="bio-label">
+                          <span class="bio-label-text">shorter</span>
+                        </label>
+                      </div> <!-- class="bio-option" -->
+                      
+                      <div class="bio-option">
+                        <input
+                          class="bio-input"
+                          type="radio"
+                          id="length-short"
+                          name="biolength"
+                          value="short"
+                          data-sound-hover="pop"
+                          data-sound-focus="click"
+                          data-sound-click="click"
+                          checked
+                        />
+                        <label for="length-short" class="bio-label">
+                          <span class="bio-label-text">short</span>
+                        </label>
+                      </div> <!-- class="bio-option" -->
+                      
+                      <div class="bio-option">
+                        <input
+                          class="bio-input"
+                          type="radio"
+                          id="length-long"
+                          name="biolength"
+                          value="long"
+                          data-sound-hover="pop"
+                          data-sound-focus="click"
+                          data-sound-click="click"
+                          
+                        />
+                        <label for="length-long" class="bio-label">
+                          <span class="bio-label-text">long</span>
+                        </label>
+                      </div> <!-- class="bio-option" -->
+                      
+                      <div class="bio-option">
+                        <input
+                          class="bio-input"
+                          type="radio"
+                          id="length-longer"
+                          name="biolength"
+                          value="longer"
+                          data-sound-hover="pop"
+                          data-sound-focus="click"
+                          data-sound-click="click"
+                          
+                        />
+                        <label for="length-longer" class="bio-label">
+                          <span class="bio-label-text">longer</span>
+                        </label>
+                      </div> <!-- class="bio-option" -->
+                      
+                      <div class="bio-option">
+                        <input
+                          class="bio-input"
+                          type="radio"
+                          id="length-longest"
+                          name="biolength"
+                          value="longest"
+                          data-sound-hover="pop"
+                          data-sound-focus="click"
+                          data-sound-click="click"
+                          
+                        />
+                        <label for="length-longest" class="bio-label">
+                          <span class="bio-label-text">longest</span>
+                        </label>
+                      </div> <!-- class="bio-option" -->
+                      
+                    </div> <!-- class="bio-length-options" -->
+                  </fieldset> <!-- class="bio-fieldset" -->
+                </form> <!-- class="bio-length-control" id="biolength" -->
+          
+              <template id="bios">
+                <p data-length="shortest">
+                  <strong>Alexis Aguilar</strong> is currently changing her life.
+                </p>
+                <p data-length="shorter">
+                  <strong>Alexis Aguilar</strong> is a community-taught full-stack web developer.
+                  She is currently changing her entire life.
+                </p>
+                <p data-length="short">
+                  <strong>Alexis Aguilar</strong> is a community-taught full-stack web developer.
+                  As a diligent and meticulous programmer, she is passionate about 
+                  delivering creative designs and constantly learning.
+                  She is currently in Florida, USA, working hard every single day to change her life.
+                </p>
+                <p data-length="long">
+                  <strong>Alexis Aguilar</strong> is a community-taught full-stack web developer, 
+                  who is incredibly passionate about her mantra: "forever learning".
+                  Every day, she fulfills a goal of learning, at minimum, two new concepts. 
+                  As a diligent and meticulous programmer, she is passionate about 
+                  delivering creative designs and organized, polished code.
+                  She is currently in Florida, USA, working hard every single day to change her life.
+                </p>
+                <p data-length="longer">
+                  <strong>Alexis Aguilar</strong> is a community-taught full-stack web developer
+                  and spends her free time building connections with fellow developers.
+                  Alexis is incredibly passionate about her mantra: "forever learning".
+                  Every day, she fulfills a goal of learning, at minimum, two new concepts. 
+                  As a diligent and meticulous programmer, she is passionate about 
+                  delivering creative designs and organized, polished code.
+                  She is currently in Florida, USA, working hard every single day to change her life.
+                </p>
+                <p data-length="longest">
+                  <strong>Alexis Aguilar</strong> is a community-taught full-stack web developer
+                  and spends her free time building connections with fellow developers.
+                  Alexis is incredibly passionate about her mantra: "forever learning".
+                  Every day, she fulfills a goal of learning, at minimum, two new concepts. 
+                  As a diligent and meticulous programmer, she is passionate about 
+                  delivering creative designs and organized, polished code.
+                  She is currently in Florida, USA, working hard every single day to change her life.
+                  Aside from programming, she enjoys weight lifting, spirituality, teaching, and mental health advocation.
+                </p>
+              </template> <!-- id="bios" -->
+
+            </div>
+
+            <p class="bio">
+                  
+              <strong>Alexis Aguilar</strong> is a community-taught full-stack web developer.
+              As a diligent and meticulous programmer, she is passionate about 
+              delivering creative designs and organized, polished code.
+              She is currently in Florida, USA, working hard every single day to change her life.
+              
+            </p>
+            
+          </div> <!-- class="bio-container" -->
+        </section> <!-- id="bio" class="block bio-block" -->
+
+        </div> <!-- class="profile"-->
+
+        <div class="skills">
+          <div class="skills__row">
+            <div class="skills__item skills__item--node">
+              <img src="./imgs/node.png" alt="" />
+              <div class="skills__item-name">NODE.JS</div>
+            </div>
+          </div>
+          <div class="skills__row">
+            <div class="skills__item skills__item--html">
+              <img src="./imgs/html.png" alt="" />
+              <div class="skills__item-name">HTML</div>
+            </div>
+            <div class="skills__item skills__item--react">
+              <img src="./imgs/react.png" alt="" />
+              <div class="skills__item-name">REACT</div>
+            </div>
+
+            <div class="skills__item skills__item--express">
+              <img src="./imgs/express.png" alt="" />
+              <div class="skills__item-name">EXPRESS.JS</div>
+            </div>
+          </div>
+          <div class="skills__row">
+            <div class="skills__item skills__item--js">
+              <img src="./imgs/JS.png" alt="" />
+              <div class="skills__item-name">JAVASCRIPT</div>
+            </div>
+            <div class="skills__item skills__item--css">
+              <img src="./imgs/css.png" alt="" />
+              <div class="skills__item-name">CSS</div>
+            </div>
+            <div class="skills__item skills__item--mongo">
+              <img src="./imgs/mongo.png" alt="" />
+              <div class="skills__item-name">MONGODB</div>
+            </div>
+
+            <div class="skills__item skills__item--git">
+              <img src="./imgs/git.png" alt="" />
+              <div class="skills__item-name">GIT</div>
+            </div>
+          </div>
+          <!-- <div class="skills__row">
+            <div class="skills__item skills__item--sass">
+              <img src="./assets/sass.png" alt="" />
+              <div class="skills__item-name">SASS</div>
+            </div>
+            <div class="skills__item skills__item--webpack">
+              <img src="./assets/nextjs.png" alt="" />
+              <div class="skills__item-name">NEXT.JS</div>
+            </div>
+
+            <div class="skills__item skills__item--r">
+              <img src="./imgs/" alt="" />
+              <div class="skills__item-name">NODE.JS</div>
+            </div>
+          </div> -->
+          <!-- <div class="skills__row">
+            <div class="skills__item skills__item--git">
+              <img src="./assets/git.png" alt="" />
+            </div>
+          </div> -->
+        </div> <!-- class="skills"-->
+      </div> <!-- class="about__content-->
+    </section> <!-- class="about" id="about" -->
+
+    <section class="projects" id="projects">
+      <h2 class="projects__heading section-heading"><!--Projects--></h2>
+
+      <div class="projects-row">
+        
+        <div id="titled-projects" class="project-container">
+          <a href="" target="_blank">
+
+            <h3 class="project__title">Projects</h3>
+
+            <div class="slideshow-container">
+
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides1 fade slideimg">
+                <div class="numbertext">1 / 3</div>
+                <img src="./imgs/sixela.jpg" style="width:100%">
+                <div class="text">Sixela Salon</div>
+              </div>
+            
+              <div class="mySlides1 fade slideimg">
+                <div class="numbertext">2 / 3</div>
+                <img src="./imgs/maidCafe.jpg" style="width:100%">
+                <div class="text">The Maid Cafe</div>
+              </div>
+            
+              <div class="mySlides1 fade slideimg">
+                <div class="numbertext">3 / 3</div>
+                <img src="./imgs/chooseYourFighter.jpg" style="width:100%">
+                <div class="text">Interactive: Choose Your Fighter</div>
+              </div>
+            
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+
+            <!-- The dots/circles -->
+            <div class="slideshowDots" style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+          </a>
+        </div>
+        
+        <!--
+        <div id="oneHundoHours" class="project-container">
+            <h3 class="project__title">100 Hours Project</h3>
+            <div class="slideshow-container">
+              <p>Coming soon...</p>
+              <!-- <img src="#" alt="#">
+            </div>
+            <a href="#" target="_blank">
+              <div class="project__live-2">Live website</div>
+            </a>
+        </div>
+        --> 
+
+        <div id="oneHundoHours" class="project-container">
+          <a href="" target="_blank">
+
+            <h3 class="project__title">100 Hours Project</h3>
+
+            <div class="slideshow-container">
+
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides3 fade slideimg">
+                <div class="numbertext">1 / 3</div>
+                <img src="./imgs/Valorant.jpg" style="width:100%">
+                <div class="text">Sixela Salon</div>
+              </div>
+            
+              <div class="mySlides3 fade slideimg">
+                <div class="numbertext">2 / 3</div>
+                <img src="./imgs/CODVanguard.jpg" style="width:100%">
+                <div class="text">The Maid Cafe</div>
+              </div>
+            
+              <div class="mySlides3 fade slideimg">
+                <div class="numbertext">3 / 3</div>
+                <img src="./imgs/LeagueOfLegends.jpg" style="width:100%">
+                <div class="text">Interactive: Choose Your Fighter</div>
+              </div>
+            
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+            </div>
+
+            <!-- The dots/circles -->
+            <div class="slideshowDots" style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+          </a>
+        </div>
+
+      </div> <!-- class="projects-row" -->
+
+      <!-- Bottom row of Projects section -->
+      <div class="projects-bottomrow">
+
+        <div id="leetcoderz" class="project-container">
+          <h3 class="project__title">L33TC0D3RZ</h3>
+          <div class="slideshow-container">
+            <p>Coming soon...</p>
+            <!-- <img src="#" alt="#"> -->
+          </div>
+          <a href="#" target="_blank">
+            <div class="project__live-2">Live website</div>
+          </a>
+      </div>
+        
+        <div id="clientwork" class="project-container">
+          <a href="./pages/clientwork.html" target="_blank">
+
+            <h3 class="project__title">Client Work</h3>
+
+            <div class="slideshow-container">
+
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides2 fade slideimg">
+                <div class="numbertext">1 / 4</div>
+                <img src="./imgs/genzmone.jpg" style="width:100%">
+                <div class="text">Gen-Z Mon-E</div>
+              </div>
+            
+              <div class="mySlides2 fade slideimg">
+                <div class="numbertext">2 / 4</div>
+                <img src="./imgs/reversah.jpg" style="width:100%">
+                <div class="text">Reversah</div>
+              </div>
+            
+              <div class="mySlides2 fade slideimg">
+                <div class="numbertext">3 / 4</div>
+                <img src="./imgs/blossombrows.jpg" style="width:100%">
+                <div class="text">Blossom Brows</div>
+              </div>
+
+              <div class="mySlides2 fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="./imgs/charliechill.jpg" style="width:100%">
+                <div class="text">Charlie Chill</div>
+              </div>
+            
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+
+            <!-- The dots/circles -->
+            <div class="slideshowDots" style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+
+          </a> <!-- href="./pages/clientwork.html" target="_blank" -->
+        </div> <!-- id="clientwork" class="project-container" -->
+
+      </div> <!-- class="projects-column__left" -->
+
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="contact__heading section-heading">Let's connect</h2>
+      <section class="contact__text">
+        <p>Want to work together?</p>
+        <p id="contact-me">Contact me on any of the following platforms</p>
+        <p>and let's collaborate.</p>
+      </section>
+      
+      <section class="socials">
+        
+        <a href="https://twitter.com/alexisintech/">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="5rem" height="5rem"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g id="original-icon" fill="rgba(252, 58, 74, 0.8)"><path d="M172.215,35.905c-6.35594,2.82188 -13.16875,4.71656 -20.33094,5.57656c7.31,-4.38063 12.92687,-11.31438 15.56062,-19.565c-6.82625,4.04469 -14.41844,6.9875 -22.4675,8.57312c-6.45,-6.88 -15.64125,-11.16656 -25.81344,-11.16656c-19.53812,0 -35.38094,15.82937 -35.38094,35.3675c0,2.76812 0.3225,5.46906 0.92719,8.0625c-29.40125,-1.47813 -55.45656,-15.56063 -72.91187,-36.96656c-3.05031,5.24062 -4.78375,11.31437 -4.78375,17.79125c0,12.26844 6.235,23.09906 15.73531,29.455c-5.805,-0.18813 -11.26062,-1.78719 -16.03094,-4.43438c0,0.14781 0,0.29563 0,0.44344c0,17.14625 12.20125,31.43031 28.36656,34.69562c-2.95625,0.80625 -6.08719,1.23625 -9.31219,1.23625c-2.28438,0 -4.50156,-0.215 -6.665,-0.645c4.515,14.04219 17.57625,24.295 33.04281,24.57719c-12.09375,9.48688 -27.34531,15.13063 -43.92719,15.13063c-2.86219,0 -5.67062,-0.16125 -8.42531,-0.49719c15.64125,10.05125 34.23875,15.89656 54.22031,15.89656c65.06438,0 100.64688,-53.89781 100.64688,-100.63344c0,-1.53187 -0.04031,-3.07719 -0.09406,-4.58219c6.90687,-4.98531 12.9,-11.22031 17.64344,-18.31531z"></path></g></g></svg>
+        </a>
+
+        <a href="https://github.com/alexisintech/">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="5.5rem" height="5.5rem"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="rgba(252, 58, 74, 0.8)"><path d="M78.11667,15.05c-32.96667,3.58333 -59.48333,30.1 -63.06667,62.35c-3.58333,33.68333 15.76667,63.78333 45.15,75.25c2.15,0.71667 4.3,-0.71667 4.3,-3.58333v-11.46667c0,0 -2.86667,0.71667 -6.45,0.71667c-10.03333,0 -14.33333,-8.6 -15.05,-13.61667c-0.71667,-2.86667 -2.15,-5.01667 -4.3,-7.16667c-2.15,-0.71667 -2.86667,-0.71667 -2.86667,-1.43333c0,-1.43333 2.15,-1.43333 2.86667,-1.43333c4.3,0 7.88333,5.01667 9.31667,7.16667c3.58333,5.73333 7.88333,7.16667 10.03333,7.16667c2.86667,0 5.01667,-0.71667 6.45,-1.43333c0.71667,-5.01667 2.86667,-10.03333 7.16667,-12.9c-16.48333,-3.58333 -28.66667,-12.9 -28.66667,-28.66667c0,-7.88333 3.58333,-15.76667 8.6,-21.5c-0.71667,-1.43333 -1.43333,-5.01667 -1.43333,-10.03333c0,-2.86667 0,-7.16667 2.15,-11.46667c0,0 10.03333,0 20.06667,9.31667c3.58333,-1.43333 8.6,-2.15 13.61667,-2.15c5.01667,0 10.03333,0.71667 14.33333,2.15c9.31667,-9.31667 20.06667,-9.31667 20.06667,-9.31667c1.43333,4.3 1.43333,8.6 1.43333,11.46667c0,5.73333 -0.71667,8.6 -1.43333,10.03333c5.01667,5.73333 8.6,12.9 8.6,21.5c0,15.76667 -12.18333,25.08333 -28.66667,28.66667c4.3,3.58333 7.16667,10.03333 7.16667,16.48333v18.63333c0,2.15 2.15,4.3 5.01667,3.58333c26.51667,-10.75 45.15,-36.55 45.15,-66.65c0,-43 -36.55,-76.68333 -79.55,-71.66667z"></path></g></g>
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/alexisintech/">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="5.5rem" height="5.5rem"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="rgba(252, 58, 74, 0.8)"><path d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,37.9948 30.8052,68.8 68.8,68.8c37.9948,0 68.8,-30.8052 68.8,-68.8c0,-37.9948 -30.8052,-68.8 -68.8,-68.8zM60.17707,48.1772c4.82747,0 8.04387,3.2164 8.04387,7.50493c0,4.28853 -3.2164,7.50493 -8.57707,7.50493c-4.82747,0.00573 -8.04387,-3.2164 -8.04387,-7.50493c0,-4.28853 3.2164,-7.50493 8.57707,-7.50493zM68.8,114.66667h-17.2v-45.86667h17.2zM126.13333,114.66667h-16.19093v-25.06613c0,-6.9316 -4.3172,-8.5312 -5.934,-8.5312c-1.6168,0 -7.0176,1.0664 -7.0176,8.5312c0,1.0664 0,25.06613 0,25.06613h-16.72413v-45.86667h16.72987v6.3984c2.15573,-3.7324 6.47293,-6.3984 14.5684,-6.3984c8.09547,0 14.5684,6.3984 14.5684,20.80053z"></path></g></g>
+          </svg>
+        </a>
+
+      </section>
+    </section>
+
+    <footer class="footer">
+      <a href="#hero">
+        <div class="return-home">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%"  viewBox="0 0 24 24" >
+            <title></title>
+            <path fill="#fafafa" d="M17.707 10.293l-5-5c-0.391-0.391-1.024-0.391-1.414 0l-5 5c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4.293-4.293 4.293 4.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414zM17.707 17.293l-5-5c-0.391-0.391-1.024-0.391-1.414 0l-5 5c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4.293-4.293 4.293 4.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"></path>
+            </svg>
+        </div>
+      </a>
+      
+      <a class="copyright" href="https://alexisintech.github.io/socialLinks/">ALEXISXDAWN ©2022</a>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/heroCanvas.js"></script>
+    <script src="js/bgCanvas.js"></script>
+    <script src="js/additions.js"></script>
+</body>
+</html>

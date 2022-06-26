@@ -180,6 +180,12 @@
   }
 }
 
+@media all and (max-width:321px){
+  #bio {
+    padding: 0 4rem;
+  }
+}
+
 .bio-container {
   display:flex;
   flex-direction:column;
@@ -198,8 +204,9 @@
 
 @media all and (max-width:450px) {
 .bio-container div {
-  display:flex;
+  /* display:flex; */
   width:100%;
+  min-width:100%;
   position:relative;
   left:2px;
 }
@@ -414,8 +421,16 @@
 @media all and (max-width:450px) {
   .bio-label::before,
   .bio-label::after {
-    height:1.5rem;
-    width:1.5rem;
+    height:1.3rem;
+    width:1.3rem;
+  }
+}
+
+@media all and (max-width:321px) {
+  .bio-label::before,
+  .bio-label::after {
+    height:1rem;
+    width:1rem;
   }
 }
 

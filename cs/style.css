@@ -220,6 +220,7 @@ button{
 
 @media all and (max-width: 1200px){.navigation{margin-right:3rem}}@media all and (max-width: 700px){.navigation{margin-right:0}}
 @media all and (max-width: 450px){.navigation{width:100vw;justify-content:center;font-size:1.5rem}}
+@media all and (max-width: 380px){.navigation{font-size:1.2rem}}
 
 .navigation-bar{
     position:sticky;
@@ -292,6 +293,7 @@ button{
     display:flex;
     flex-direction:column;
     /* align-items:center; */
+    width:50%;
     font-weight:500;
     opacity:0;
     transition:all 1.3s;
@@ -300,7 +302,7 @@ button{
 
 @media all and (max-width: 1023px){.profile{margin-bottom:7rem;opacity:1; align-items:center;}}
 @media all and (max-width: 1440px) and (min-width: 1024px) {.profile{width:50%}}
-@media all and (max-width: 450px) {.profile{gap:4rem}}
+@media all and (max-width: 450px) {.profile{gap:4rem; width:100%}}
 
 .profile__picture{
     height:36.5rem;
@@ -494,7 +496,7 @@ button{
 .projects-row, .projects-bottomrow {
     display:flex;
     gap: 5rem;
-    padding: 3rem 18rem;
+    padding: 3rem 22rem;
     width:100%;
 }
 
@@ -512,8 +514,10 @@ button{
     }
 }
 
-@media all and (max-width:450px) {
-    .projects-row, .projects-bottomrow {
+/* For mobile: Make projects stack (all four project boxes are stacked one column) */
+@media all and (max-width: 450px) {
+    .projects-row, .projects-bottomrow{
+        flex-direction:column;
         gap:2rem;
         padding:1rem 5rem;
     }
@@ -544,9 +548,15 @@ button{
 @media all and (max-width:450px) {
     .project-container {
         width:100%;
-        height:32rem;
+        height:36rem;
         padding: 2rem 3rem;
         gap:1rem;
+    }
+}
+
+@media all and (max-width:321px) {
+    .project-container {
+        height:32rem;
     }
 }
 
@@ -581,13 +591,19 @@ button{
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
-
+ 
   @media all and (max-width: 450px) {
     .prev, .next {
         font-size: 10px;
     }
   }
   
+  @media all and (max-width: 321px) {
+    .prev, .next {
+        padding:8px;
+    }
+  }
+ 
   /* Position the "next button" to the right */
   .next {
     right: 0;
@@ -632,7 +648,7 @@ button{
     .numbertext {font-size:6px}
   }
   
-  /* The dots/bullets/indicators */
+/* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
     height: 15px;
@@ -788,19 +804,20 @@ button{
 
 .contact{
     position:relative;
-    margin-left:auto;
-    margin-right:auto;
+    /* margin-left:auto;
+    margin-right:auto; */
     display:flex;
     width:600px;
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    margin-bottom:10rem
+    margin:10rem auto;
 }
+
 @media all and (max-width: 700px){.contact{width:400px}}
 @media all and (max-width: 470px){.contact{width:330px}}
 @media all and (max-width:600px){.contact{margin-top:30px}}
-@media all and (max-width: 400px){.contact{width:260px}}
+@media all and (max-width: 450px){.contact{width:260px; margin:3rem auto 7rem auto}}
 @media all and (max-width: 260px){.contact{width: 100vw}}
 
 
