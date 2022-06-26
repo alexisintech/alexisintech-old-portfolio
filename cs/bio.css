@@ -169,13 +169,13 @@
  */
 
 #bio {
-  display:flex;
   padding-left: 18px;
 }
 
 @media all and (max-width:450px){
   #bio {
-    padding: 0 5rem;
+    padding: 0 6.5rem;
+    display:flex;
     align-items:center;
   }
 }
@@ -192,13 +192,14 @@
     align-content:center;
     align-items:center;
     text-align:center;
+    gap:2.5rem;
   }
 }
 
 @media all and (max-width:450px) {
 .bio-container div {
   display:flex;
-  gap: 5rem;
+  width:100%;
   position:relative;
   left:2px;
 }
@@ -238,6 +239,7 @@
 @media all and (max-width:450px) {
   .bio-fieldset{
     display:flex;
+    width:100%;
     justify-content:center;
     align-items:center;
   }
@@ -284,6 +286,12 @@
   }
 }
 
+@media all and (max-width: 450px) {
+  .bio-length-options {
+    gap:0;
+  }
+}
+
 .bio-option {
   cursor: pointer;
   height: calc((300px - 10rem) / 6 + 1rem);
@@ -316,6 +324,12 @@
   margin-top:10px;
 }
 
+@media all and (max-width:450px){
+  .bio-label-text{
+    margin:0;
+  }
+}
+
 .bio-option:first-of-type .bio-label-text,
 .bio-option:last-of-type .bio-label-text {
   clip: auto;
@@ -343,7 +357,7 @@
 
 @media all and (max-width: 450px) {
   .bio-option:first-of-type .bio-label-text {
-    left:-5px;
+    left:16px;
   }
 }
 
@@ -366,7 +380,7 @@
 
 @media all and (max-width: 450px) {
   .bio-option:last-of-type .bio-label-text {
-    right:-5px;
+    right:16px;
   }
 }
 
@@ -400,8 +414,8 @@
 @media all and (max-width:450px) {
   .bio-label::before,
   .bio-label::after {
-    height:1rem;
-    width:1rem;
+    height:1.5rem;
+    width:1.5rem;
   }
 }
 
