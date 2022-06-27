@@ -218,7 +218,8 @@ button{
     letter-spacing:1px
 }
 
-@media all and (max-width: 1200px){.navigation{margin-right:3rem}}@media all and (max-width: 700px){.navigation{margin-right:0}}
+@media all and (max-width: 1500px){.navigation{margin-right:5rem}}
+@media all and (max-width: 700px){.navigation{margin-right:0}}
 @media all and (max-width: 450px){.navigation{width:100vw;justify-content:center;font-size:1.5rem}}
 @media all and (max-width: 380px){.navigation{font-size:1.2rem}}
 
@@ -283,8 +284,9 @@ button{
     padding: 0;
 }
 
-@media all and (max-width: 1442px) and (min-width: 1026px) {.about__content{padding: 0 4rem}}
-@media all and (max-width: 1025px) and (min-width: 1000px) {.about__content{padding: 0 15rem; gap:4em}}
+@media all and (max-width: 1442px) and (min-width: 1282px) {.about__content{padding: 0 4rem}}
+@media all and (max-width: 1281px) and (min-width: 1026px) {.about__content{padding: 0 8rem}}
+@media all and (max-width: 1025px) and (min-width: 1000px) {.about__content{padding: 0 18rem; gap:4em}}
 @media all and (max-width: 1000px){.about__content{opacity:1;flex-direction:column;gap: 0px;margin-left: 0px}}
 
 /* ===================== Left side of About section (includes profile pic and bio) ===================== */
@@ -392,7 +394,7 @@ button{
 }
 
 @media all and (max-width: 1442px) and (min-width:1282px) {.skills__item{height:90px;width:145px}}
-@media all and (max-width: 1281px) and (min-width: 1026px) {.skills__item{border-width:2px}}
+@media all and (max-width: 1281px) and (min-width: 1026px) {.skills__item{border-width:2px;height:85px;width:135px}}
 @media all and (max-width: 1025px) and (min-width: 1000px){.skills__item{height:70px;width:105px}}
 @media all and (max-width: 1023px){.skills__item{opacity:1}}
 @media all and (max-width: 500px){.skills__item{height:60px;width:100px}}
@@ -412,6 +414,7 @@ button{
 }
 
 @media all and (max-width: 1500px){.skills__item img{height:55px}}
+@media all and (max-width:1281px){.skills__item img{height:45px}}
 @media all and (max-width: 1026px) {.skills__item img{height:38px}}
 @media all and (max-width: 1000px){.skills__item img{height:50px}}
 @media all and (max-width: 600px){.skills__item img{height:45px}}
@@ -500,10 +503,17 @@ button{
     width:100%;
 }
 
-/* For mobile: Make projects stack (all four project boxes are stacked one column) */
-@media all and (max-width: 450px) {
-    .projects-row, .projects-bottomrow{
-        flex-direction:column;
+@media all and (max-width:1442px) {
+    .projects-row, .projects-bottomrow {
+        gap:4rem;
+        padding:2rem 15rem;
+    }
+}
+
+@media all and (max-width:1281px) {
+    .projects-row, .projects-bottomrow {
+        gap:4rem;
+        padding:2rem 13rem;
     }
 }
 
@@ -538,6 +548,20 @@ button{
     gap: 30px;
 }
 
+@media all and (max-width:1440px) {
+    .project-container {
+        height:50rem;
+        padding: 30px 20px;
+    }
+}
+
+@media all and (max-width:1280px) {
+    .project-container {
+        height:48rem;
+        padding: 30px 20px;
+    }
+}
+
 @media all and (max-width:1026px) {
     .project-container {
         height:45rem;
@@ -551,6 +575,24 @@ button{
         height:36rem;
         padding: 2rem 3rem;
         gap:1rem;
+    }
+}
+
+@media all and (max-width:400px) {
+    .project-container {
+        height:30rem;
+    }
+}
+
+@media all and (max-width:399px) and (min-width:355px) {
+    .project-container {
+        height:33rem;
+    }
+}
+
+@media all and (max-width:350px) {
+    .project-container {
+        height:34rem;
     }
 }
 
@@ -581,7 +623,7 @@ button{
   .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 38%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -702,6 +744,7 @@ button{
     font-size:3.5rem
 }
 
+@media all and (max-width:1440px) {.project__title{font-size:3rem}}
 @media all and (max-width:1026px) {.project__title{font-size:2.8rem}}
 @media all and (max-width: 820px){.project__title{font-size:2.7rem}}
 @media all and (max-width: 550px){.project__title{font-size:2rem; margin-bottom:0.7rem}}
@@ -841,7 +884,7 @@ button{
     text-align: center;
 }
 
-@media all and (max-width: 450px) {.contact__text{margin-bottom:4rem}}
+@media all and (max-width: 450px) {.contact__text{margin-bottom:4rem; font-size:1.5rem}}
 
 #contact-me {
     margin-top:10px;
