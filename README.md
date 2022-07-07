@@ -1,5 +1,5 @@
 # [Portfolio](https://alexisintech.github.io/)
-This website provides quick and easy access to my social media links. I built this as an alternative to a link tree as link tree limits certain links and also, link tree offers limited creative freedom.
+My personal portfolio includes a small biography about myself, a showcase of notable projects, and my social media links where I can be contacted.
 
 <div>
   <a href="https://alexisintech.github.io/" target=_blank>
