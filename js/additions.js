@@ -21,7 +21,7 @@ options.addEventListener('change', (event) => {
 // ~~~~ MULTI SLIDESHOWS
 // ===================================================================
 
-let slideIndex = [1,2,3,4]; // Chooses the indexes of array "slideId" (on line 25)
+let slideIndex = [1,1,1,1]; // Chooses the indexes of array "slideId" (on line 25)
 let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"] // Classed the members of each slideshow group with different CSS classes. Placed them in array
 showSlides(1, 0);
 showSlides(1, 1);
